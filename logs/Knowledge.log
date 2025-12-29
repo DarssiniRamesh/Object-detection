@@ -292,3 +292,337 @@
 2025-12-29 06:53:55,160 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 268, Duration: 0ms
 2025-12-29 06:53:55,373 - Knowledge - INFO - Saving knowledge to Redis...
 2025-12-29 06:53:55,615 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-12-29 16:39:59,958 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-12-29 16:40:00,334 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-12-29 16:40:00,571 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-12-29 16:40:00,734 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2025-12-29 17:50:02,989 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-12-29 17:50:03,353 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-12-29 17:50:03,569 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-12-29 17:50:03,799 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2025-12-29 17:50:04,963 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-12-29 17:50:05,156 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-12-29 17:50:05,382 - Knowledge - INFO - load persisted knowledge: begin
+2025-12-29 17:50:06,768 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/301872/b8132uk/Object-detection/.knowledge have been renamed to use .json
+2025-12-29 17:50:07,016 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:07,197 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:07,698 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:07,877 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:08,072 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco_panoptic.py
+2025-12-29 17:50:08,502 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 239ms
+2025-12-29 17:50:12,087 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/coco_panoptic.py, Duration: 3378ms
+2025-12-29 17:50:12,345 - Knowledge - INFO - persist search terms embedding for datasets/coco_panoptic.py
+2025-12-29 17:50:12,535 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco_panoptic.py
+2025-12-29 17:50:12,776 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:13,035 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:13,692 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:13,881 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:14,142 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/misc.py
+2025-12-29 17:50:14,705 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 358ms
+2025-12-29 17:50:15,577 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: util/misc.py, Duration: 640ms
+2025-12-29 17:50:15,812 - Knowledge - INFO - persist search terms embedding for util/misc.py
+2025-12-29 17:50:16,012 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/misc.py
+2025-12-29 17:50:16,269 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:16,449 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:17,084 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:17,280 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:17,473 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/train_net.py
+2025-12-29 17:50:17,902 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 220ms
+2025-12-29 17:50:18,694 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/train_net.py, Duration: 608ms
+2025-12-29 17:50:18,882 - Knowledge - INFO - persist search terms embedding for d2/train_net.py
+2025-12-29 17:50:19,170 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/train_net.py
+2025-12-29 17:50:19,419 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:19,627 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:20,075 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:20,242 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:20,409 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/config.py
+2025-12-29 17:50:20,865 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 298ms
+2025-12-29 17:50:21,364 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/detr/config.py, Duration: 318ms
+2025-12-29 17:50:21,566 - Knowledge - INFO - persist search terms embedding for d2/detr/config.py
+2025-12-29 17:50:21,773 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/config.py
+2025-12-29 17:50:22,040 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:22,294 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:23,016 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:23,218 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:23,518 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/segmentation.py
+2025-12-29 17:50:23,965 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 263ms
+2025-12-29 17:50:24,517 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/segmentation.py, Duration: 333ms
+2025-12-29 17:50:24,727 - Knowledge - INFO - persist search terms embedding for models/segmentation.py
+2025-12-29 17:50:24,933 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/segmentation.py
+2025-12-29 17:50:25,186 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:25,388 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:25,844 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:26,017 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:26,226 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/__init__.py
+2025-12-29 17:50:26,734 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 311ms
+2025-12-29 17:50:28,131 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: util/__init__.py, Duration: 1183ms
+2025-12-29 17:50:28,341 - Knowledge - INFO - persist search terms embedding for util/__init__.py
+2025-12-29 17:50:28,561 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/__init__.py
+2025-12-29 17:50:28,785 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:28,967 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:29,469 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:29,656 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:29,836 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/panoptic_eval.py
+2025-12-29 17:50:30,169 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 140ms
+2025-12-29 17:50:30,992 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/panoptic_eval.py, Duration: 617ms
+2025-12-29 17:50:31,147 - Knowledge - INFO - persist search terms embedding for datasets/panoptic_eval.py
+2025-12-29 17:50:31,355 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/panoptic_eval.py
+2025-12-29 17:50:31,575 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:31,771 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:32,456 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:32,669 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:32,856 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/converter.py
+2025-12-29 17:50:33,491 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 437ms
+2025-12-29 17:50:34,070 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/converter.py, Duration: 367ms
+2025-12-29 17:50:34,281 - Knowledge - INFO - persist search terms embedding for d2/converter.py
+2025-12-29 17:50:34,473 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/converter.py
+2025-12-29 17:50:34,674 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:34,856 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:35,411 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:35,594 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:35,773 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/dataset_mapper.py
+2025-12-29 17:50:36,216 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 262ms
+2025-12-29 17:50:37,469 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/detr/dataset_mapper.py, Duration: 982ms
+2025-12-29 17:50:37,642 - Knowledge - INFO - persist search terms embedding for d2/detr/dataset_mapper.py
+2025-12-29 17:50:37,823 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/dataset_mapper.py
+2025-12-29 17:50:37,995 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:38,189 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:38,728 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:38,895 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:39,075 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/hubconf.py
+2025-12-29 17:50:39,527 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 206ms
+2025-12-29 17:50:40,288 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: hubconf.py, Duration: 582ms
+2025-12-29 17:50:40,489 - Knowledge - INFO - persist search terms embedding for hubconf.py
+2025-12-29 17:50:40,718 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/hubconf.py
+2025-12-29 17:50:40,982 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:41,215 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:41,629 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:41,795 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:41,988 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/main.py
+2025-12-29 17:50:42,389 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 216ms
+2025-12-29 17:50:43,001 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: main.py, Duration: 400ms
+2025-12-29 17:50:43,169 - Knowledge - INFO - persist search terms embedding for main.py
+2025-12-29 17:50:43,348 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/main.py
+2025-12-29 17:50:43,594 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:43,824 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:44,411 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:44,588 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:44,792 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/requirements.txt
+2025-12-29 17:50:45,412 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 386ms
+2025-12-29 17:50:45,885 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: requirements.txt, Duration: 287ms
+2025-12-29 17:50:46,055 - Knowledge - INFO - persist search terms embedding for requirements.txt
+2025-12-29 17:50:46,263 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/requirements.txt
+2025-12-29 17:50:46,477 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:46,668 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:47,121 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:47,330 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:47,531 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/README.md
+2025-12-29 17:50:48,013 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 279ms
+2025-12-29 17:50:48,654 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/README.md, Duration: 431ms
+2025-12-29 17:50:48,874 - Knowledge - INFO - persist search terms embedding for d2/README.md
+2025-12-29 17:50:49,095 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/README.md
+2025-12-29 17:50:49,297 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:49,502 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:49,885 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:50,093 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:50,277 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2025-12-29 17:50:50,653 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 212ms
+2025-12-29 17:50:51,172 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/configs/detr_256_6_6_torchvision.yaml, Duration: 302ms
+2025-12-29 17:50:51,362 - Knowledge - INFO - persist search terms embedding for d2/configs/detr_256_6_6_torchvision.yaml
+2025-12-29 17:50:51,569 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2025-12-29 17:50:51,743 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:51,985 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:52,373 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:52,553 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:52,734 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/__init__.py
+2025-12-29 17:50:53,189 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 246ms
+2025-12-29 17:50:53,647 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/detr/__init__.py, Duration: 276ms
+2025-12-29 17:50:53,847 - Knowledge - INFO - persist search terms embedding for d2/detr/__init__.py
+2025-12-29 17:50:54,041 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/__init__.py
+2025-12-29 17:50:54,254 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:54,434 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:54,798 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:54,966 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:55,206 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco_eval.py
+2025-12-29 17:50:55,650 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 245ms
+2025-12-29 17:50:56,100 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/coco_eval.py, Duration: 249ms
+2025-12-29 17:50:56,301 - Knowledge - INFO - persist search terms embedding for datasets/coco_eval.py
+2025-12-29 17:50:56,527 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco_eval.py
+2025-12-29 17:50:56,764 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:56,956 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:57,471 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:57,670 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:50:57,897 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/__init__.py
+2025-12-29 17:50:58,516 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 384ms
+2025-12-29 17:50:58,939 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/__init__.py, Duration: 221ms
+2025-12-29 17:50:59,111 - Knowledge - INFO - persist search terms embedding for models/__init__.py
+2025-12-29 17:50:59,297 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/__init__.py
+2025-12-29 17:50:59,492 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:50:59,700 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:00,026 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:00,241 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:00,455 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/matcher.py
+2025-12-29 17:51:01,252 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 562ms
+2025-12-29 17:51:02,034 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/matcher.py, Duration: 505ms
+2025-12-29 17:51:02,251 - Knowledge - INFO - persist search terms embedding for models/matcher.py
+2025-12-29 17:51:02,508 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/matcher.py
+2025-12-29 17:51:02,714 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:02,955 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:03,799 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:04,027 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:04,226 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/box_ops.py
+2025-12-29 17:51:04,711 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 325ms
+2025-12-29 17:51:05,180 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: util/box_ops.py, Duration: 300ms
+2025-12-29 17:51:05,367 - Knowledge - INFO - persist search terms embedding for util/box_ops.py
+2025-12-29 17:51:05,568 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/box_ops.py
+2025-12-29 17:51:05,815 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:05,992 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:06,408 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:06,567 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:06,753 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/transforms.py
+2025-12-29 17:51:07,150 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 198ms
+2025-12-29 17:51:07,671 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/transforms.py, Duration: 349ms
+2025-12-29 17:51:07,893 - Knowledge - INFO - persist search terms embedding for datasets/transforms.py
+2025-12-29 17:51:08,058 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/transforms.py
+2025-12-29 17:51:08,294 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:08,551 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:08,998 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:09,201 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:09,397 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/detr.py
+2025-12-29 17:51:09,814 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 205ms
+2025-12-29 17:51:10,365 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/detr.py, Duration: 343ms
+2025-12-29 17:51:10,607 - Knowledge - INFO - persist search terms embedding for models/detr.py
+2025-12-29 17:51:10,798 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/detr.py
+2025-12-29 17:51:11,016 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:11,257 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:11,794 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:11,996 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:12,210 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/tox.ini
+2025-12-29 17:51:12,594 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 198ms
+2025-12-29 17:51:13,035 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: tox.ini, Duration: 258ms
+2025-12-29 17:51:13,211 - Knowledge - INFO - persist search terms embedding for tox.ini
+2025-12-29 17:51:13,401 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/tox.ini
+2025-12-29 17:51:13,576 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:13,747 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:14,195 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:14,380 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:14,555 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/detr.py
+2025-12-29 17:51:14,918 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 145ms
+2025-12-29 17:51:15,442 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/detr/detr.py, Duration: 286ms
+2025-12-29 17:51:15,676 - Knowledge - INFO - persist search terms embedding for d2/detr/detr.py
+2025-12-29 17:51:15,850 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/detr/detr.py
+2025-12-29 17:51:16,031 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:16,219 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:16,735 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:16,961 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:17,209 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2025-12-29 17:51:17,608 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 181ms
+2025-12-29 17:51:18,142 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: d2/configs/detr_segm_256_6_6_torchvision.yaml, Duration: 321ms
+2025-12-29 17:51:18,299 - Knowledge - INFO - persist search terms embedding for d2/configs/detr_segm_256_6_6_torchvision.yaml
+2025-12-29 17:51:18,476 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2025-12-29 17:51:18,702 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:18,905 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:19,450 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:19,652 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:19,864 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/position_encoding.py
+2025-12-29 17:51:20,284 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 225ms
+2025-12-29 17:51:20,799 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/position_encoding.py, Duration: 296ms
+2025-12-29 17:51:20,961 - Knowledge - INFO - persist search terms embedding for models/position_encoding.py
+2025-12-29 17:51:21,226 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/position_encoding.py
+2025-12-29 17:51:21,453 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:21,680 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:21,957 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:22,165 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:22,356 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/README.md
+2025-12-29 17:51:22,688 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 124ms
+2025-12-29 17:51:23,131 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 268ms
+2025-12-29 17:51:23,304 - Knowledge - INFO - persist search terms embedding for README.md
+2025-12-29 17:51:23,520 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/README.md
+2025-12-29 17:51:23,716 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:23,878 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:24,175 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:24,352 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:24,510 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/transformer.py
+2025-12-29 17:51:24,804 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 119ms
+2025-12-29 17:51:25,399 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/transformer.py, Duration: 417ms
+2025-12-29 17:51:25,587 - Knowledge - INFO - persist search terms embedding for models/transformer.py
+2025-12-29 17:51:25,768 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/transformer.py
+2025-12-29 17:51:25,958 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:26,141 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:26,451 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:26,607 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:26,826 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/engine.py
+2025-12-29 17:51:27,157 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 128ms
+2025-12-29 17:51:27,681 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: engine.py, Duration: 260ms
+2025-12-29 17:51:27,856 - Knowledge - INFO - persist search terms embedding for engine.py
+2025-12-29 17:51:28,037 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/engine.py
+2025-12-29 17:51:28,289 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:28,538 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:28,891 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:29,061 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:29,255 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco.py
+2025-12-29 17:51:29,621 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 176ms
+2025-12-29 17:51:30,265 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/coco.py, Duration: 384ms
+2025-12-29 17:51:30,490 - Knowledge - INFO - persist search terms embedding for datasets/coco.py
+2025-12-29 17:51:30,718 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/coco.py
+2025-12-29 17:51:30,947 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:31,146 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:31,516 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:31,718 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:31,908 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/plot_utils.py
+2025-12-29 17:51:32,489 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 418ms
+2025-12-29 17:51:32,958 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: util/plot_utils.py, Duration: 272ms
+2025-12-29 17:51:33,233 - Knowledge - INFO - persist search terms embedding for util/plot_utils.py
+2025-12-29 17:51:33,457 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/util/plot_utils.py
+2025-12-29 17:51:33,643 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:33,837 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:34,211 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:34,435 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:34,611 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/run_with_submitit.py
+2025-12-29 17:51:35,344 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 517ms
+2025-12-29 17:51:36,175 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: run_with_submitit.py, Duration: 639ms
+2025-12-29 17:51:36,380 - Knowledge - INFO - persist search terms embedding for run_with_submitit.py
+2025-12-29 17:51:36,582 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/run_with_submitit.py
+2025-12-29 17:51:36,839 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:37,027 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:37,408 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:37,582 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:37,792 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/__init__.py
+2025-12-29 17:51:38,163 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 188ms
+2025-12-29 17:51:38,672 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: datasets/__init__.py, Duration: 333ms
+2025-12-29 17:51:38,831 - Knowledge - INFO - persist search terms embedding for datasets/__init__.py
+2025-12-29 17:51:39,028 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/datasets/__init__.py
+2025-12-29 17:51:39,261 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:39,513 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:39,819 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:40,061 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:40,269 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/backbone.py
+2025-12-29 17:51:40,656 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 181ms
+2025-12-29 17:51:41,134 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: models/backbone.py, Duration: 276ms
+2025-12-29 17:51:41,343 - Knowledge - INFO - persist search terms embedding for models/backbone.py
+2025-12-29 17:51:41,583 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/models/backbone.py
+2025-12-29 17:51:41,785 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:41,988 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:42,336 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/Object-detection.git:main
+2025-12-29 17:51:42,545 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f54e24bbb10>
+2025-12-29 17:51:42,773 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/test_all.py
+2025-12-29 17:51:43,268 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 258ms
+2025-12-29 17:51:43,819 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test_all.py, Duration: 385ms
+2025-12-29 17:51:44,018 - Knowledge - INFO - persist search terms embedding for test_all.py
+2025-12-29 17:51:44,206 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/301872/b8132uk/Object-detection/test_all.py
+2025-12-29 17:51:44,380 - Knowledge - INFO - Loaded 34 files from persisted knowledge
+2025-12-29 17:51:44,557 - Knowledge - INFO - load persisted knowledge: end
+2025-12-29 17:51:44,786 - Knowledge - INFO - Redis support added with prefix knowledge:b8132uk:
+2025-12-29 17:51:45,155 - Knowledge - INFO - Starting knowledge initialization for ID: IBUZy8-b8132uk
+2025-12-29 17:51:45,357 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8132uk
+2025-12-29 17:51:45,554 - Knowledge - INFO - 🔍 Full session ID: IBUZy8-b8132uk
+2025-12-29 17:51:45,742 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8132uk:
+2025-12-29 17:51:45,915 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-12-29 17:51:46,111 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-12-29 17:51:46,330 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8132uk
+2025-12-29 17:51:46,514 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-12-29 17:51:46,678 - Knowledge - INFO - ✅ Successfully loaded from Redis: 34 files
+2025-12-29 17:51:46,893 - Knowledge - INFO - ✅ Redis load complete: 34 files in 0.98s
+2025-12-29 17:51:47,070 - Knowledge - INFO - ⚡ Total Redis path: 0.98s (vs ~300s from disk)
+2025-12-29 17:51:47,265 - Knowledge - INFO - Saving knowledge to Redis...
+2025-12-29 17:51:47,542 - Knowledge - INFO - Knowledge saved to Redis successfully
