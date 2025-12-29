@@ -6,7 +6,10 @@ import numpy as np
 import torch
 from PIL import Image
 
-from panopticapi.utils import rgb2id
+try:
+    from panopticapi.utils import rgb2id
+except ImportError:
+    rgb2id = None
 from util.box_ops import masks_to_boxes
 
 from .coco import make_coco_transforms
@@ -78,6 +81,13 @@ class CocoPanoptic:
 
 
 def build(image_set, args):
+    if rgb2id is None:
+        raise ImportError(
+            "COCO panoptic dataset support requires `panopticapi`, but it is not installed. "
+            "Install it manually, e.g.: "
+            "pip install \"git+https://github.com/cocodataset/panopticapi.git#subdirectory=PythonAPI\""
+        )
+
     img_folder_root = Path(args.coco_path)
     ann_folder_root = Path(args.coco_panoptic_path)
     assert img_folder_root.exists(), f'provided COCO path {img_folder_root} does not exist'

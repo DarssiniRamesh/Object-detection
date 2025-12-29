@@ -9,7 +9,14 @@ torchvision==0.19.1
 
 # COCO APIs
 pycocotools==2.0.8
-panopticapi==0.2.2
+
+# Optional (Panoptic Segmentation)
+# `panopticapi` is not reliably available on PyPI (no wheel/sdist for many environments),
+# so it is intentionally NOT pinned here to keep `pip install -r requirements.txt` working.
+#
+# If you need COCO panoptic dataset loading / evaluation, install it manually, e.g.:
+#   pip install "git+https://github.com/cocodataset/panopticapi.git#subdirectory=PythonAPI"
+# (Depending on your environment, omitting `#subdirectory=PythonAPI` may also work.)
 
 # Common utilities used by training/eval scripts
 numpy==1.26.4

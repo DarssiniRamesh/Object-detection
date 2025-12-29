@@ -7,7 +7,7 @@ import util.misc as utils
 try:
     from panopticapi.evaluation import pq_compute
 except ImportError:
-    pass
+    pq_compute = None
 
 
 class PanopticEvaluator(object):
@@ -36,6 +36,12 @@ class PanopticEvaluator(object):
 
     def summarize(self):
         if utils.is_main_process():
+            if pq_compute is None:
+                raise RuntimeError(
+                    "Panoptic evaluation requires `panopticapi`, but it is not installed. "
+                    "Install it manually, e.g.: "
+                    "pip install \"git+https://github.com/cocodataset/panopticapi.git#subdirectory=PythonAPI\""
+                )
             json_data = {"annotations": self.predictions}
             predictions_json = os.path.join(self.output_dir, "predictions.json")
             with open(predictions_json, "w") as f:

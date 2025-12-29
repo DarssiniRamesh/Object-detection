@@ -3,6 +3,7 @@ import argparse
 import datetime
 import json
 import random
+import sys
 import time
 from pathlib import Path
 
@@ -243,6 +244,20 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('DETR training and evaluation script', parents=[get_args_parser()])
     args = parser.parse_args()
+
+    # Optional dependency guard: allow installs/runs without panopticapi unless panoptic is requested.
+    if args.dataset_file == "coco_panoptic":
+        try:
+            import panopticapi  # noqa: F401
+        except ImportError:
+            print(
+                "WARNING: `panopticapi` is required for `--dataset_file coco_panoptic` but is not installed.\n"
+                "Install it manually, e.g.:\n"
+                "  pip install \"git+https://github.com/cocodataset/panopticapi.git#subdirectory=PythonAPI\"",
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
+
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
     main(args)

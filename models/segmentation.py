@@ -18,7 +18,8 @@ from util.misc import NestedTensor, interpolate, nested_tensor_from_tensor_list
 try:
     from panopticapi.utils import id2rgb, rgb2id
 except ImportError:
-    pass
+    id2rgb = None
+    rgb2id = None
 
 
 class DETRsegm(nn.Module):
@@ -262,6 +263,13 @@ class PostProcessPanoptic(nn.Module):
             target_sizes: This is a list of tuples (or torch tensors) corresponding to the requested final size
                           of each prediction. If left to None, it will default to the processed_sizes
             """
+        if id2rgb is None or rgb2id is None:
+            raise RuntimeError(
+                "Panoptic post-processing requires `panopticapi`, but it is not installed. "
+                "Install it manually, e.g.: "
+                "pip install \"git+https://github.com/cocodataset/panopticapi.git#subdirectory=PythonAPI\""
+            )
+
         if target_sizes is None:
             target_sizes = processed_sizes
         assert len(processed_sizes) == len(target_sizes)
