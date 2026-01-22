@@ -1355,3 +1355,363 @@
 2026-01-22 11:35:44,253 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
 2026-01-22 11:35:44,255 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-22 11:35:44,271 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-22 12:47:52,927 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-22 12:47:52,929 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-22 12:47:52,931 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-22 12:47:52,933 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-22 12:47:53,676 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-22 12:47:53,678 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-22 12:47:53,680 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-22 12:47:53,691 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_panoptic.py
+2026-01-22 12:47:53,695 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/misc.py
+2026-01-22 12:47:53,700 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/train_net.py
+2026-01-22 12:47:53,704 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/config.py
+2026-01-22 12:47:53,708 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/segmentation.py
+2026-01-22 12:47:53,711 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/__init__.py
+2026-01-22 12:47:53,715 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/panoptic_eval.py
+2026-01-22 12:47:53,719 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/converter.py
+2026-01-22 12:47:53,724 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/dataset_mapper.py
+2026-01-22 12:47:53,728 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/hubconf.py
+2026-01-22 12:47:53,732 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/main.py
+2026-01-22 12:47:53,737 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/requirements.txt
+2026-01-22 12:47:53,741 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/README.md
+2026-01-22 12:47:53,744 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-01-22 12:47:53,749 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/__init__.py
+2026-01-22 12:47:53,754 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_eval.py
+2026-01-22 12:47:53,760 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/__init__.py
+2026-01-22 12:47:53,764 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/matcher.py
+2026-01-22 12:47:53,769 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/box_ops.py
+2026-01-22 12:47:53,774 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/transforms.py
+2026-01-22 12:47:53,779 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/detr.py
+2026-01-22 12:47:53,784 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/tox.ini
+2026-01-22 12:47:53,788 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/detr.py
+2026-01-22 12:47:53,794 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-01-22 12:47:53,799 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/position_encoding.py
+2026-01-22 12:47:53,804 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/README.md
+2026-01-22 12:47:53,809 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/transformer.py
+2026-01-22 12:47:53,813 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/engine.py
+2026-01-22 12:47:53,817 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco.py
+2026-01-22 12:47:53,821 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/plot_utils.py
+2026-01-22 12:47:53,825 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/run_with_submitit.py
+2026-01-22 12:47:53,829 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/__init__.py
+2026-01-22 12:47:53,832 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/backbone.py
+2026-01-22 12:47:53,836 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/test_all.py
+2026-01-22 12:47:53,837 - Knowledge - INFO - Loaded 34 files from persisted knowledge
+2026-01-22 12:47:53,837 - Knowledge - INFO - load persisted knowledge: end
+2026-01-22 12:47:53,848 - Knowledge - INFO - Redis support added with prefix knowledge:b6731x9:
+2026-01-22 12:47:53,896 - Knowledge - INFO - Starting knowledge initialization for ID: YGoS0b-b6731x9
+2026-01-22 12:47:53,897 - Knowledge - INFO - 🔍 Checking Redis for build_id: b6731x9
+2026-01-22 12:47:53,897 - Knowledge - INFO - 🔍 Full session ID: YGoS0b-b6731x9
+2026-01-22 12:47:53,898 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b6731x9:
+2026-01-22 12:47:53,898 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-22 12:47:53,900 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-22 12:47:53,900 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b6731x9
+2026-01-22 12:47:53,905 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-22 12:47:53,910 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-22 12:47:53,963 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-22 12:47:53,965 - Knowledge - INFO - load persisted docinfo: end
+2026-01-22 12:47:53,966 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-22 12:47:53,966 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-22 12:47:53,966 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-22 12:47:53,966 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b6731x9
+2026-01-22 12:47:53,973 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-22 12:47:53,973 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-22 12:47:53,973 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-22 12:47:53,977 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_panoptic.py
+2026-01-22 12:47:53,979 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/misc.py
+2026-01-22 12:47:53,982 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/train_net.py
+2026-01-22 12:47:53,985 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/config.py
+2026-01-22 12:47:53,987 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/segmentation.py
+2026-01-22 12:47:53,991 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/__init__.py
+2026-01-22 12:47:53,993 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/panoptic_eval.py
+2026-01-22 12:47:53,996 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/converter.py
+2026-01-22 12:47:53,998 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/dataset_mapper.py
+2026-01-22 12:47:54,000 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/hubconf.py
+2026-01-22 12:47:54,002 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/main.py
+2026-01-22 12:47:54,006 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/requirements.txt
+2026-01-22 12:47:54,008 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/README.md
+2026-01-22 12:47:54,010 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-01-22 12:47:54,012 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/__init__.py
+2026-01-22 12:47:54,014 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_eval.py
+2026-01-22 12:47:54,017 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/__init__.py
+2026-01-22 12:47:54,019 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/matcher.py
+2026-01-22 12:47:54,021 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/box_ops.py
+2026-01-22 12:47:54,023 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/transforms.py
+2026-01-22 12:47:54,025 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/detr.py
+2026-01-22 12:47:54,028 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/tox.ini
+2026-01-22 12:47:54,030 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/detr.py
+2026-01-22 12:47:54,032 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-01-22 12:47:54,034 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/position_encoding.py
+2026-01-22 12:47:54,036 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/README.md
+2026-01-22 12:47:54,039 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/transformer.py
+2026-01-22 12:47:54,041 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/engine.py
+2026-01-22 12:47:54,043 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco.py
+2026-01-22 12:47:54,045 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/plot_utils.py
+2026-01-22 12:47:54,047 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/run_with_submitit.py
+2026-01-22 12:47:54,049 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/__init__.py
+2026-01-22 12:47:54,052 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/backbone.py
+2026-01-22 12:47:54,054 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/test_all.py
+2026-01-22 12:47:54,054 - Knowledge - INFO - Loaded 34 files from persisted knowledge
+2026-01-22 12:47:54,054 - Knowledge - INFO - load persisted knowledge: end
+2026-01-22 12:47:54,055 - Knowledge - INFO - 📁 Disk load complete in 0.14s
+2026-01-22 12:47:54,055 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 160, Duration: 0ms
+2026-01-22 12:47:54,056 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-22 12:47:54,057 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-22 12:47:54,057 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-22 12:47:54,058 - Knowledge - INFO - [kw1] Queue=34, InProgress=0, PendingWorkers=0/1, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,058 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-22 12:47:54,058 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=34, active_workers=0/1
+2026-01-22 12:47:54,059 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-22 12:47:54,059 - Knowledge - INFO - [kw2] Queue=34, InProgress=0, PendingWorkers=0/2, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,060 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_panoptic.py
+2026-01-22 12:47:54,061 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-22 12:47:54,061 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-22 12:47:54,061 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=34, active_workers=1/3
+2026-01-22 12:47:54,062 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/203791/b6731x9/Object-detection/util/misc.py
+2026-01-22 12:47:54,062 - Knowledge - INFO - [kw3] Queue=30, InProgress=0, PendingWorkers=1/3, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,063 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-22 12:47:54,064 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/203791/b6731x9/Object-detection/models/segmentation.py
+2026-01-22 12:47:54,064 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-22 12:47:54,066 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/train_net.py
+2026-01-22 12:47:54,066 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=30, active_workers=2/4
+2026-01-22 12:47:54,067 - Knowledge - INFO - [kw4] Queue=26, InProgress=0, PendingWorkers=2/4, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,068 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/203791/b6731x9/Object-detection/util/__init__.py
+2026-01-22 12:47:54,068 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-22 12:47:54,069 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-01-22 12:47:54,069 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/config.py
+2026-01-22 12:47:54,070 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/dataset_mapper.py
+2026-01-22 12:47:54,070 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=26, active_workers=3/5
+2026-01-22 12:47:54,071 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/util/__init__.py (ext=.py, size=71)
+2026-01-22 12:47:54,071 - Knowledge - INFO - [kw5] Queue=22, InProgress=0, PendingWorkers=3/5, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,072 - Knowledge - INFO - knowledge worker kw6 start
+2026-01-22 12:47:54,072 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-01-22 12:47:54,073 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/config.py (ext=.py, size=888)
+2026-01-22 12:47:54,073 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/README.md
+2026-01-22 12:47:54,074 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/panoptic_eval.py
+2026-01-22 12:47:54,074 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/203791/b6731x9/Object-detection/hubconf.py
+2026-01-22 12:47:54,074 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=22, active_workers=4/6
+2026-01-22 12:47:54,075 - Knowledge - INFO - knowledge worker kw7 start
+2026-01-22 12:47:54,075 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-01-22 12:47:54,076 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/README.md (ext=.md, size=2228)
+2026-01-22 12:47:54,077 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/datasets/panoptic_eval.py (ext=.py, size=1493)
+2026-01-22 12:47:54,078 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/203791/b6731x9/Object-detection/main.py
+2026-01-22 12:47:54,078 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/203791/b6731x9/Object-detection/models/__init__.py
+2026-01-22 12:47:54,079 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-01-22 12:47:54,079 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/converter.py
+2026-01-22 12:47:54,079 - Knowledge - INFO - knowledge worker kw8 start
+2026-01-22 12:47:54,080 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/203791/b6731x9/Object-detection/requirements.txt
+2026-01-22 12:47:54,080 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-01-22 12:47:54,081 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml (ext=.yaml, size=1012)
+2026-01-22 12:47:54,082 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/__init__.py
+2026-01-22 12:47:54,082 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/models/__init__.py (ext=.py, size=143)
+2026-01-22 12:47:54,084 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/requirements.txt (ext=.txt, size=224)
+2026-01-22 12:47:54,085 - Knowledge - INFO - knowledge worker kw9 start
+2026-01-22 12:47:54,086 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/__init__.py (ext=.py, size=176)
+2026-01-22 12:47:54,086 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-01-22 12:47:54,087 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/203791/b6731x9/Object-detection/models/matcher.py
+2026-01-22 12:47:54,088 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_eval.py
+2026-01-22 12:47:54,089 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/203791/b6731x9/Object-detection/util/box_ops.py
+2026-01-22 12:47:54,090 - Knowledge - INFO - knowledge worker kw10 start
+2026-01-22 12:47:54,090 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-01-22 12:47:54,093 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/transforms.py
+2026-01-22 12:47:54,094 - Knowledge - INFO - knowledge worker kw11 start
+2026-01-22 12:47:54,095 - Knowledge - INFO - [kw8] Queue=14, InProgress=0, PendingWorkers=5/10, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,095 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-01-22 12:47:54,096 - Knowledge - INFO - [kw9] Queue=14, InProgress=0, PendingWorkers=5/11, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,096 - Knowledge - INFO - [kw6] Queue=14, InProgress=0, PendingWorkers=5/11, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,097 - Knowledge - INFO - [kw10] Queue=14, InProgress=0, PendingWorkers=5/11, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,098 - Knowledge - INFO - [kw7] Queue=14, InProgress=0, PendingWorkers=5/11, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,105 - Knowledge - INFO - [kw11] Queue=14, InProgress=0, PendingWorkers=5/11, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,105 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/11
+2026-01-22 12:47:54,107 - Knowledge - INFO - knowledge worker kw12 start
+2026-01-22 12:47:54,108 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-01-22 12:47:54,109 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/12
+2026-01-22 12:47:54,110 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/12
+2026-01-22 12:47:54,113 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/12
+2026-01-22 12:47:54,115 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/12
+2026-01-22 12:47:54,116 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=5/12
+2026-01-22 12:47:54,154 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/203791/b6731x9/Object-detection/models/detr.py
+2026-01-22 12:47:54,162 - Knowledge - INFO - [kw12] Queue=10, InProgress=0, PendingWorkers=6/12, Completed=0/34 (0.0%)
+2026-01-22 12:47:54,164 - Knowledge - INFO - knowledge worker kw13 start
+2026-01-22 12:47:54,165 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/203791/b6731x9/Object-detection/models/position_encoding.py
+2026-01-22 12:47:54,171 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-01-22 12:47:54,171 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/converter.py (small file (2590 bytes))
+2026-01-22 12:47:54,176 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco.py
+2026-01-22 12:47:54,177 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/203791/b6731x9/Object-detection/models/backbone.py
+2026-01-22 12:47:54,183 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 160, Duration: 0ms
+2026-01-22 12:47:54,268 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/203791/b6731x9/Object-detection/tox.ini
+2026-01-22 12:47:54,285 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/util/box_ops.py (small file (2561 bytes))
+2026-01-22 12:47:54,324 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=10, active_workers=10/13
+2026-01-22 12:47:54,415 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/203791/b6731x9/Object-detection/README.md
+2026-01-22 12:47:54,418 - Knowledge - INFO - knowledge worker kw14 start
+2026-01-22 12:47:54,418 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-01-22 12:47:54,423 - Knowledge - INFO - Worker kw10 processing /app/data/T0002/203791/b6731x9/Object-detection/test_all.py
+2026-01-22 12:47:54,424 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/203791/b6731x9/Object-detection/util/plot_utils.py
+2026-01-22 12:47:54,430 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 247ms
+2026-01-22 12:47:54,435 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/tox.ini (ext=.ini, size=65)
+2026-01-22 12:47:54,461 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/README.md (ext=.md, size=11892)
+2026-01-22 12:47:54,463 - Knowledge - INFO - knowledge worker kw15 start
+2026-01-22 12:47:54,464 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-01-22 12:47:54,467 - Knowledge - INFO - Progress: 0.0% | Files: 0/34 | Rate: 0.00 files/sec | Queue: 0
+2026-01-22 12:47:54,468 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/203791/b6731x9/Object-detection/run_with_submitit.py
+2026-01-22 12:47:54,469 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/detr.py
+2026-01-22 12:47:54,470 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/203791/b6731x9/Object-detection/models/transformer.py
+2026-01-22 12:47:54,477 - Knowledge - INFO - knowledge worker kw16 start
+2026-01-22 12:47:54,478 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-01-22 12:47:54,480 - Knowledge - INFO - Worker kw9 processing /app/data/T0002/203791/b6731x9/Object-detection/engine.py
+2026-01-22 12:47:54,482 - Knowledge - INFO - Worker kw6 processing /app/data/T0002/203791/b6731x9/Object-detection/datasets/__init__.py
+2026-01-22 12:47:54,482 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-01-22 12:47:54,484 - Knowledge - INFO - knowledge worker kw17 start
+2026-01-22 12:47:54,485 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-01-22 12:47:54,493 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml (ext=.yaml, size=1033)
+2026-01-22 12:47:54,797 - Knowledge - INFO - Fast-tracked /app/data/T0002/203791/b6731x9/Object-detection/datasets/__init__.py (ext=.py, size=897)
+2026-01-22 12:47:54,818 - Knowledge - INFO - knowledge worker kw18 start
+2026-01-22 12:47:54,819 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-01-22 12:47:54,876 - Knowledge - INFO - knowledge worker kw19 start
+2026-01-22 12:47:54,877 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-01-22 12:47:54,893 - Knowledge - INFO - knowledge worker kw20 start
+2026-01-22 12:48:03,478 - Knowledge - INFO - [LLM_CALL] Completed: matcher.py:chunk1, Duration: 9372ms, PromptTokens: 2752, CompletionTokens: 329, Cost: $0.00041
+2026-01-22 12:48:03,479 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/matcher.py
+2026-01-22 12:48:05,134 - Knowledge - INFO - [LLM_CALL] Completed: coco_eval.py:chunk1, Duration: 11023ms, PromptTokens: 4736, CompletionTokens: 495, Cost: $0.00067
+2026-01-22 12:48:05,175 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_eval.py
+2026-01-22 12:48:08,212 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:08,248 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/README.md
+2026-01-22 12:48:08,638 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-01-22 12:48:08,724 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/__init__.py
+2026-01-22 12:48:09,002 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_eval.py
+2026-01-22 12:48:09,281 - Knowledge - INFO - [LLM_CALL] Completed: segmentation.py:chunk1, Duration: 15181ms, PromptTokens: 8384, CompletionTokens: 614, Cost: $0.00108
+2026-01-22 12:48:09,327 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/segmentation.py
+2026-01-22 12:48:12,053 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:12,054 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/segmentation.py
+2026-01-22 12:48:12,322 - Knowledge - INFO - [LLM_CALL] Completed: plot_utils.py:chunk1, Duration: 17357ms, PromptTokens: 3048, CompletionTokens: 374, Cost: $0.00045
+2026-01-22 12:48:12,323 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/util/plot_utils.py
+2026-01-22 12:48:13,489 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/__init__.py
+2026-01-22 12:48:13,773 - Knowledge - INFO - [LLM_CALL] Completed: run_with_submitit.py:chunk1, Duration: 18771ms, PromptTokens: 2392, CompletionTokens: 417, Cost: $0.00041
+2026-01-22 12:48:13,804 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/run_with_submitit.py
+2026-01-22 12:48:13,806 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/panoptic_eval.py
+2026-01-22 12:48:15,624 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 288, Duration: 0ms
+2026-01-22 12:48:15,630 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 6ms
+2026-01-22 12:48:15,702 - Knowledge - INFO - Progress: 23.5% | Files: 8/34 | Rate: 0.36 files/sec | Queue: 0
+2026-01-22 12:48:16,123 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/converter.py
+2026-01-22 12:48:16,258 - Knowledge - INFO - [LLM_CALL] Completed: main.py:chunk1, Duration: 21397ms, PromptTokens: 5634, CompletionTokens: 412, Cost: $0.00073
+2026-01-22 12:48:16,292 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/main.py
+2026-01-22 12:48:18,454 - Knowledge - INFO - [LLM_CALL] Completed: transforms.py:chunk1, Duration: 23977ms, PromptTokens: 5106, CompletionTokens: 783, Cost: $0.00082
+2026-01-22 12:48:18,593 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/datasets/transforms.py
+2026-01-22 12:48:18,602 - Knowledge - INFO - [LLM_CALL] Completed: position_encoding.py:chunk1, Duration: 23791ms, PromptTokens: 2478, CompletionTokens: 288, Cost: $0.00036
+2026-01-22 12:48:18,603 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/position_encoding.py
+2026-01-22 12:48:19,700 - Knowledge - INFO - [LLM_CALL] Completed: coco.py:chunk1, Duration: 24821ms, PromptTokens: 3444, CompletionTokens: 485, Cost: $0.00054
+2026-01-22 12:48:19,701 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco.py
+2026-01-22 12:48:20,155 - Knowledge - INFO - [LLM_CALL] Completed: engine.py:chunk1, Duration: 25182ms, PromptTokens: 3808, CompletionTokens: 455, Cost: $0.00056
+2026-01-22 12:48:20,156 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/engine.py
+2026-01-22 12:48:20,398 - Knowledge - INFO - [LLM_CALL] Completed: detr.py:chunk1, Duration: 25403ms, PromptTokens: 5764, CompletionTokens: 735, Cost: $0.00087
+2026-01-22 12:48:20,403 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/detr.py
+2026-01-22 12:48:21,026 - Knowledge - INFO - [LLM_CALL] Completed: transformer.py:chunk1, Duration: 26147ms, PromptTokens: 6112, CompletionTokens: 478, Cost: $0.00080
+2026-01-22 12:48:21,037 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/transformer.py
+2026-01-22 12:48:22,859 - Knowledge - INFO - [LLM_CALL] Completed: coco_panoptic.py:chunk1, Duration: 28760ms, PromptTokens: 2608, CompletionTokens: 417, Cost: $0.00043
+2026-01-22 12:48:22,859 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_panoptic.py
+2026-01-22 12:48:22,957 - Knowledge - INFO - [LLM_CALL] Completed: dataset_mapper.py:chunk1, Duration: 28843ms, PromptTokens: 2846, CompletionTokens: 489, Cost: $0.00048
+2026-01-22 12:48:22,964 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/dataset_mapper.py
+2026-01-22 12:48:23,011 - Knowledge - INFO - [LLM_CALL] Completed: test_all.py:chunk1, Duration: 28188ms, PromptTokens: 4944, CompletionTokens: 740, Cost: $0.00079
+2026-01-22 12:48:23,012 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/test_all.py
+2026-01-22 12:48:23,586 - Knowledge - INFO - [LLM_CALL] Completed: hubconf.py:chunk1, Duration: 29117ms, PromptTokens: 3966, CompletionTokens: 586, Cost: $0.00063
+2026-01-22 12:48:23,594 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/hubconf.py
+2026-01-22 12:48:23,608 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:23,664 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco.py
+2026-01-22 12:48:23,731 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-01-22 12:48:23,743 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 12ms
+2026-01-22 12:48:23,753 - Knowledge - INFO - Progress: 52.9% | Files: 18/34 | Rate: 0.59 files/sec | Queue: 0
+2026-01-22 12:48:23,787 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/plot_utils.py
+2026-01-22 12:48:23,838 - Knowledge - INFO - [LLM_CALL] Completed: backbone.py:chunk1, Duration: 29359ms, PromptTokens: 2852, CompletionTokens: 736, Cost: $0.00058
+2026-01-22 12:48:23,840 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/backbone.py
+2026-01-22 12:48:23,890 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/run_with_submitit.py
+2026-01-22 12:48:23,969 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/__init__.py
+2026-01-22 12:48:24,031 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/models/detr.py
+2026-01-22 12:48:24,111 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:24,117 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/position_encoding.py
+2026-01-22 12:48:24,123 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:24,162 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/__init__.py
+2026-01-22 12:48:24,560 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/README.md
+2026-01-22 12:48:24,576 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/matcher.py
+2026-01-22 12:48:24,583 - Knowledge - INFO - Processing batch of 2 files
+2026-01-22 12:48:24,583 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/backbone.py
+2026-01-22 12:48:25,022 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/transformer.py
+2026-01-22 12:48:25,023 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/box_ops.py
+2026-01-22 12:48:25,028 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/test_all.py
+2026-01-22 12:48:25,108 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/engine.py
+2026-01-22 12:48:25,132 - Knowledge - INFO - [LLM_CALL] Completed: train_net.py:chunk1, Duration: 30661ms, PromptTokens: 3010, CompletionTokens: 691, Cost: $0.00058
+2026-01-22 12:48:25,135 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/d2/train_net.py
+2026-01-22 12:48:25,158 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/transforms.py
+2026-01-22 12:48:25,679 - Knowledge - INFO - [LLM_CALL] Completed: misc.py:chunk1, Duration: 31250ms, PromptTokens: 8034, CompletionTokens: 850, Cost: $0.00114
+2026-01-22 12:48:25,682 - Knowledge - INFO - done ingest for /app/data/T0002/203791/b6731x9/Object-detection/util/misc.py
+2026-01-22 12:48:25,754 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:25,756 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/dataset_mapper.py
+2026-01-22 12:48:25,883 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/hubconf.py
+2026-01-22 12:48:25,884 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:25,886 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/models/detr.py
+2026-01-22 12:48:26,006 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/main.py
+2026-01-22 12:48:26,073 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/requirements.txt
+2026-01-22 12:48:26,182 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/tox.ini
+2026-01-22 12:48:26,248 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/detr.py
+2026-01-22 12:48:26,313 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-01-22 12:48:26,336 - Knowledge - INFO - Processing batch of 4 files
+2026-01-22 12:48:26,337 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/datasets/coco_panoptic.py
+2026-01-22 12:48:26,503 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-01-22 12:48:26,504 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1ms
+2026-01-22 12:48:26,505 - Knowledge - INFO - Progress: 100.0% | Files: 34/34 | Rate: 1.01 files/sec | Queue: 0
+2026-01-22 12:48:26,508 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/util/misc.py
+2026-01-22 12:48:26,634 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/train_net.py
+2026-01-22 12:48:26,695 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/203791/b6731x9/Object-detection/d2/detr/config.py
+2026-01-22 12:48:27,056 - Knowledge - INFO - Knowledge creation complete
+2026-01-22 12:48:27,056 - Knowledge - INFO - ==================================================
+2026-01-22 12:48:27,057 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-22 12:48:27,057 - Knowledge - INFO - ==================================================
+2026-01-22 12:48:27,058 - Knowledge - INFO - Total processing time: 34.13 seconds (0.57 minutes)
+2026-01-22 12:48:27,058 - Knowledge - INFO - Files processed: 0
+2026-01-22 12:48:27,058 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-22 12:48:27,058 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-22 12:48:27,059 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-22 12:48:27,059 - Knowledge - INFO - LLM Processing: 448.60s (1314.4%)
+2026-01-22 12:48:27,059 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-22 12:48:27,059 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-22 12:48:27,060 - Knowledge - INFO - WebSocket Communication: 0.27s (0.8%)
+2026-01-22 12:48:27,060 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-22 12:48:27,060 - Knowledge - INFO - Total LLM calls: 19
+2026-01-22 12:48:27,061 - Knowledge - INFO - Average LLM response time: 23610ms
+2026-01-22 12:48:27,061 - Knowledge - INFO - Average prompt tokens: 4311.5
+2026-01-22 12:48:27,061 - Knowledge - INFO - Average completion tokens: 546.0
+2026-01-22 12:48:27,062 - Knowledge - INFO - Total prompt tokens: 81918
+2026-01-22 12:48:27,062 - Knowledge - INFO - Total completion tokens: 10374
+2026-01-22 12:48:27,062 - Knowledge - INFO - Total LLM cost: $0.0123
+2026-01-22 12:48:27,062 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-22 12:48:27,063 - Knowledge - INFO - MongoDB operations: 0
+2026-01-22 12:48:27,063 - Knowledge - INFO - Redis operations: 0
+2026-01-22 12:48:27,064 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-22 12:48:27,065 - Knowledge - INFO - WebSocket messages sent: 9
+2026-01-22 12:48:27,065 - Knowledge - INFO - Average message size: 127.6 bytes
+2026-01-22 12:48:27,066 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-22 12:48:27,066 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-22 12:48:27,066 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-22 12:48:27,066 - Knowledge - INFO - ==================================================
+2026-01-22 12:48:27,067 - Knowledge - INFO - ==================================================
+2026-01-22 12:48:27,067 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-22 12:48:27,067 - Knowledge - INFO - ==================================================
+2026-01-22 12:48:27,068 - Knowledge - INFO - Total processing time: 34.19 seconds (0.57 minutes)
+2026-01-22 12:48:27,068 - Knowledge - INFO - Files processed: 34 of 34
+2026-01-22 12:48:27,068 - Knowledge - INFO - Processing rate: 0.99 files/second
+2026-01-22 12:48:27,068 - Knowledge - INFO - WebSocket messages sent: 4
+2026-01-22 12:48:27,069 - Knowledge - INFO - MongoDB operations: 34
+2026-01-22 12:48:27,069 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-22 12:48:27,069 - Knowledge - INFO - LLM costs: $0.0135
+2026-01-22 12:48:27,070 - Knowledge - INFO - Prompt tokens: 90394
+2026-01-22 12:48:27,070 - Knowledge - INFO - Completion tokens: 11239
+2026-01-22 12:48:27,070 - Knowledge - INFO - Updating org costs, total cost: 0.013534999999999998
+2026-01-22 12:48:28,870 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
+2026-01-22 12:48:28,873 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-22 12:48:28,889 - Knowledge - INFO - Knowledge saved to Redis successfully
