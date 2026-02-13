@@ -626,3 +626,927 @@
 2025-12-29 17:51:47,070 - Knowledge - INFO - ⚡ Total Redis path: 0.98s (vs ~300s from disk)
 2025-12-29 17:51:47,265 - Knowledge - INFO - Saving knowledge to Redis...
 2025-12-29 17:51:47,542 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-02-13 10:03:00,271 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-02-13 10:03:00,274 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-02-13 10:03:00,275 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-02-13 10:03:00,275 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-02-13 10:03:00,276 - Knowledge - INFO - 📊 Performance monitoring enabled (reporting every 60s)
+2026-02-13 10:03:01,426 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-02-13 10:03:01,429 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-02-13 10:03:01,430 - Knowledge - INFO - load persisted knowledge: begin
+2026-02-13 10:03:01,813 - Knowledge - INFO - Persisted knowledge files in /app/data/T0002/219777/b0809rn/Object-detection/.knowledge have been renamed to use .json
+2026-02-13 10:03:01,825 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_panoptic.py
+2026-02-13 10:03:01,830 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/misc.py
+2026-02-13 10:03:01,834 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/train_net.py
+2026-02-13 10:03:01,843 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/config.py
+2026-02-13 10:03:01,847 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/segmentation.py
+2026-02-13 10:03:01,852 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/__init__.py
+2026-02-13 10:03:01,857 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/panoptic_eval.py
+2026-02-13 10:03:01,862 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/converter.py
+2026-02-13 10:03:01,866 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/dataset_mapper.py
+2026-02-13 10:03:01,871 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/hubconf.py
+2026-02-13 10:03:01,876 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/main.py
+2026-02-13 10:03:01,880 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/requirements.txt
+2026-02-13 10:03:01,884 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/README.md
+2026-02-13 10:03:01,888 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-02-13 10:03:01,892 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/__init__.py
+2026-02-13 10:03:01,896 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_eval.py
+2026-02-13 10:03:01,901 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/__init__.py
+2026-02-13 10:03:01,905 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/matcher.py
+2026-02-13 10:03:01,911 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/box_ops.py
+2026-02-13 10:03:01,916 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/transforms.py
+2026-02-13 10:03:01,922 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/detr.py
+2026-02-13 10:03:01,927 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/tox.ini
+2026-02-13 10:03:01,931 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/detr.py
+2026-02-13 10:03:01,936 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-02-13 10:03:01,940 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/position_encoding.py
+2026-02-13 10:03:01,944 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/README.md
+2026-02-13 10:03:01,948 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/transformer.py
+2026-02-13 10:03:01,954 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/engine.py
+2026-02-13 10:03:01,959 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco.py
+2026-02-13 10:03:01,962 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/plot_utils.py
+2026-02-13 10:03:01,967 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/run_with_submitit.py
+2026-02-13 10:03:01,971 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/__init__.py
+2026-02-13 10:03:01,976 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/backbone.py
+2026-02-13 10:03:01,979 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/test_all.py
+2026-02-13 10:03:01,980 - Knowledge - INFO - Loaded 34 files from persisted knowledge
+2026-02-13 10:03:01,980 - Knowledge - INFO - load persisted knowledge: end
+2026-02-13 10:03:01,994 - Knowledge - INFO - Redis support added with prefix knowledge:b0809rn:
+2026-02-13 10:03:02,044 - Knowledge - INFO - Starting knowledge initialization for ID: 4U7xHm-b0809rn
+2026-02-13 10:03:02,045 - Knowledge - INFO - 🔍 Checking Redis for build_id: b0809rn
+2026-02-13 10:03:02,045 - Knowledge - INFO - 🔍 Full session ID: 4U7xHm-b0809rn
+2026-02-13 10:03:02,046 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b0809rn:
+2026-02-13 10:03:02,046 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-02-13 10:03:02,046 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-02-13 10:03:02,046 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b0809rn
+2026-02-13 10:03:02,054 - Knowledge - WARNING - ❌ No Redis cache found
+2026-02-13 10:03:02,068 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-02-13 10:03:02,119 - Knowledge - INFO - load persisted docinfo: begin
+2026-02-13 10:03:02,121 - Knowledge - INFO - load persisted docinfo: end
+2026-02-13 10:03:02,121 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-02-13 10:03:02,122 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-02-13 10:03:02,122 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-02-13 10:03:02,122 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b0809rn
+2026-02-13 10:03:02,128 - Knowledge - WARNING - ❌ No Redis cache found
+2026-02-13 10:03:02,128 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-02-13 10:03:02,128 - Knowledge - INFO - load persisted knowledge: begin
+2026-02-13 10:03:02,133 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_panoptic.py
+2026-02-13 10:03:02,135 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/misc.py
+2026-02-13 10:03:02,137 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/train_net.py
+2026-02-13 10:03:02,139 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/config.py
+2026-02-13 10:03:02,142 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/segmentation.py
+2026-02-13 10:03:02,145 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/__init__.py
+2026-02-13 10:03:02,148 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/panoptic_eval.py
+2026-02-13 10:03:02,153 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/converter.py
+2026-02-13 10:03:02,157 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/dataset_mapper.py
+2026-02-13 10:03:02,160 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/hubconf.py
+2026-02-13 10:03:02,163 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/main.py
+2026-02-13 10:03:02,166 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/requirements.txt
+2026-02-13 10:03:02,169 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/README.md
+2026-02-13 10:03:02,171 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-02-13 10:03:02,182 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/__init__.py
+2026-02-13 10:03:02,185 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_eval.py
+2026-02-13 10:03:02,188 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/__init__.py
+2026-02-13 10:03:02,191 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/matcher.py
+2026-02-13 10:03:02,194 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/box_ops.py
+2026-02-13 10:03:02,197 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/transforms.py
+2026-02-13 10:03:02,199 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/detr.py
+2026-02-13 10:03:02,203 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/tox.ini
+2026-02-13 10:03:02,207 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/detr.py
+2026-02-13 10:03:02,210 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-02-13 10:03:02,212 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/position_encoding.py
+2026-02-13 10:03:02,216 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/README.md
+2026-02-13 10:03:02,219 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/transformer.py
+2026-02-13 10:03:02,222 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/engine.py
+2026-02-13 10:03:02,225 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco.py
+2026-02-13 10:03:02,227 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/plot_utils.py
+2026-02-13 10:03:02,230 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/run_with_submitit.py
+2026-02-13 10:03:02,232 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/__init__.py
+2026-02-13 10:03:02,235 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/backbone.py
+2026-02-13 10:03:02,238 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/test_all.py
+2026-02-13 10:03:02,239 - Knowledge - INFO - Loaded 34 files from persisted knowledge
+2026-02-13 10:03:02,239 - Knowledge - INFO - load persisted knowledge: end
+2026-02-13 10:03:02,240 - Knowledge - INFO - 📁 Disk load complete in 0.17s
+2026-02-13 10:03:02,241 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 245, Duration: 0ms
+2026-02-13 10:03:02,242 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-02-13 10:03:02,242 - Knowledge - INFO - knowledge worker kw1 start
+2026-02-13 10:03:02,243 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-02-13 10:03:02,243 - Knowledge - INFO - knowledge worker kw2 start
+2026-02-13 10:03:02,244 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-02-13 10:03:02,244 - Knowledge - INFO - [kw2] Queue=34, InProgress=0, PendingWorkers=0/2, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,245 - Knowledge - INFO - knowledge worker kw3 start
+2026-02-13 10:03:02,246 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-02-13 10:03:02,246 - Knowledge - INFO - [kw1] Queue=34, InProgress=0, PendingWorkers=0/3, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,247 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=34, active_workers=0/3
+2026-02-13 10:03:02,248 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=34, active_workers=0/3
+2026-02-13 10:03:02,249 - Knowledge - INFO - knowledge worker kw4 start
+2026-02-13 10:03:02,249 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-02-13 10:03:02,251 - Knowledge - INFO - [kw3] Queue=30, InProgress=0, PendingWorkers=1/4, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,257 - Knowledge - INFO - [kw4] Queue=26, InProgress=0, PendingWorkers=2/4, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,258 - Knowledge - INFO - knowledge worker kw5 start
+2026-02-13 10:03:02,258 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-02-13 10:03:02,260 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=30, active_workers=2/5
+2026-02-13 10:03:02,261 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=26, active_workers=2/5
+2026-02-13 10:03:02,265 - Knowledge - INFO - knowledge worker kw6 start
+2026-02-13 10:03:02,265 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-02-13 10:03:02,268 - Knowledge - INFO - knowledge worker kw7 start
+2026-02-13 10:03:02,269 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-02-13 10:03:02,314 - Knowledge - INFO - [kw5] Queue=18, InProgress=0, PendingWorkers=4/7, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,315 - Knowledge - INFO - [kw7] Queue=18, InProgress=0, PendingWorkers=4/7, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,317 - Knowledge - INFO - [kw6] Queue=18, InProgress=0, PendingWorkers=4/7, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,348 - Knowledge - INFO - knowledge worker kw8 start
+2026-02-13 10:03:02,354 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-02-13 10:03:02,359 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=18, active_workers=4/8
+2026-02-13 10:03:02,361 - Knowledge - INFO - Fast-tracked /app/data/T0002/219777/b0809rn/Object-detection/d2/converter.py (small file (2590 bytes))
+2026-02-13 10:03:02,366 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=18, active_workers=4/8
+2026-02-13 10:03:02,371 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=18, active_workers=4/8
+2026-02-13 10:03:02,376 - Knowledge - INFO - knowledge worker kw9 start
+2026-02-13 10:03:02,377 - Knowledge - INFO - [kw8] Queue=18, InProgress=0, PendingWorkers=4/8, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,377 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-02-13 10:03:02,452 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=18, active_workers=7/9
+2026-02-13 10:03:02,455 - Knowledge - INFO - knowledge worker kw10 start
+2026-02-13 10:03:02,456 - Knowledge - INFO - [kw9] Queue=6, InProgress=0, PendingWorkers=7/9, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,458 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-02-13 10:03:02,465 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=6, active_workers=8/10
+2026-02-13 10:03:02,470 - Knowledge - INFO - [kw10] Queue=2, InProgress=0, PendingWorkers=8/10, Completed=0/34 (0.0%)
+2026-02-13 10:03:02,479 - Knowledge - INFO - knowledge worker kw11 start
+2026-02-13 10:03:02,480 - Knowledge - INFO - Fast-tracked /app/data/T0002/219777/b0809rn/Object-detection/util/box_ops.py (small file (2561 bytes))
+2026-02-13 10:03:02,481 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-02-13 10:03:02,488 - Knowledge - INFO - Batch sizing: calculated=2, max_allowed=10, queue=2, active_workers=9/11
+2026-02-13 10:03:02,491 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 245, Duration: 0ms
+2026-02-13 10:03:02,550 - Knowledge - INFO - knowledge worker kw12 start
+2026-02-13 10:03:02,551 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-02-13 10:03:02,640 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 149ms
+2026-02-13 10:03:02,651 - Knowledge - INFO - knowledge worker kw13 start
+2026-02-13 10:03:02,652 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-02-13 10:03:02,655 - Knowledge - INFO - Progress: 0.0% | Files: 0/34 | Rate: 0.00 files/sec | Queue: 0
+2026-02-13 10:03:02,678 - Knowledge - INFO - knowledge worker kw14 start
+2026-02-13 10:03:02,687 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-02-13 10:03:02,703 - Knowledge - INFO - knowledge worker kw15 start
+2026-02-13 10:03:02,703 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-02-13 10:03:02,743 - Knowledge - INFO - knowledge worker kw16 start
+2026-02-13 10:03:02,752 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-02-13 10:03:02,769 - Knowledge - INFO - knowledge worker kw17 start
+2026-02-13 10:03:02,769 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-02-13 10:03:02,776 - Knowledge - INFO - knowledge worker kw18 start
+2026-02-13 10:03:02,778 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-02-13 10:03:02,779 - Knowledge - INFO - knowledge worker kw19 start
+2026-02-13 10:03:02,780 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-02-13 10:03:02,782 - Knowledge - INFO - knowledge worker kw20 start
+2026-02-13 10:03:02,782 - Knowledge - INFO - 🚀 Started 20 worker threads for KG build
+2026-02-13 10:03:02,784 - Knowledge - INFO - 📈 Monitoring: Total files=34, Queue length=0
+2026-02-13 10:03:15,654 - Knowledge - INFO - [LLM_CALL] Completed: coco_eval.py:chunk1, Duration: 13283ms, PromptTokens: 4734, CompletionTokens: 526, Cost: $0.00068
+2026-02-13 10:03:15,680 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_eval.py
+2026-02-13 10:03:15,991 - Knowledge - INFO - ⏱️  Actual file processing started (first file processed)
+2026-02-13 10:03:17,115 - Knowledge - INFO - [LLM_CALL] Completed: segmentation.py:chunk1, Duration: 14853ms, PromptTokens: 8382, CompletionTokens: 571, Cost: $0.00107
+2026-02-13 10:03:17,153 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/segmentation.py
+2026-02-13 10:03:17,452 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:17,474 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/README.md
+2026-02-13 10:03:17,806 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_256_6_6_torchvision.yaml
+2026-02-13 10:03:18,022 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/__init__.py
+2026-02-13 10:03:18,259 - Knowledge - INFO - [LLM_CALL] Completed: matcher.py:chunk1, Duration: 15810ms, PromptTokens: 2750, CompletionTokens: 348, Cost: $0.00041
+2026-02-13 10:03:18,265 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/matcher.py
+2026-02-13 10:03:18,325 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_eval.py
+2026-02-13 10:03:18,447 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:18,453 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/segmentation.py
+2026-02-13 10:03:19,954 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/__init__.py
+2026-02-13 10:03:21,842 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/panoptic_eval.py
+2026-02-13 10:03:22,273 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/converter.py
+2026-02-13 10:03:24,047 - Knowledge - INFO - [LLM_CALL] Completed: transforms.py:chunk1, Duration: 21441ms, PromptTokens: 5104, CompletionTokens: 649, Cost: $0.00077
+2026-02-13 10:03:24,048 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/datasets/transforms.py
+2026-02-13 10:03:25,653 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 161, Duration: 0ms
+2026-02-13 10:03:25,686 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 33ms
+2026-02-13 10:03:25,692 - Knowledge - INFO - Progress: 26.5% | Files: 9/34 | Rate: 0.36 files/sec | Queue: 0
+2026-02-13 10:03:26,261 - Knowledge - INFO - [LLM_CALL] Completed: dataset_mapper.py:chunk1, Duration: 23992ms, PromptTokens: 2844, CompletionTokens: 465, Cost: $0.00047
+2026-02-13 10:03:26,280 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/dataset_mapper.py
+2026-02-13 10:03:27,125 - Knowledge - INFO - [LLM_CALL] Completed: coco_panoptic.py:chunk1, Duration: 24860ms, PromptTokens: 2606, CompletionTokens: 402, Cost: $0.00042
+2026-02-13 10:03:27,126 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_panoptic.py
+2026-02-13 10:03:28,026 - Knowledge - INFO - [LLM_CALL] Completed: position_encoding.py:chunk1, Duration: 25537ms, PromptTokens: 2476, CompletionTokens: 314, Cost: $0.00037
+2026-02-13 10:03:28,068 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/position_encoding.py
+2026-02-13 10:03:28,794 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:28,808 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/__init__.py
+2026-02-13 10:03:29,186 - Knowledge - INFO - [LLM_CALL] Completed: test_all.py:chunk1, Duration: 26495ms, PromptTokens: 4942, CompletionTokens: 796, Cost: $0.00081
+2026-02-13 10:03:29,187 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/test_all.py
+2026-02-13 10:03:29,395 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/matcher.py
+2026-02-13 10:03:29,479 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 163, Duration: 0ms
+2026-02-13 10:03:29,491 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 13ms
+2026-02-13 10:03:29,497 - Knowledge - INFO - Progress: 35.3% | Files: 12/34 | Rate: 0.41 files/sec | Queue: 0
+2026-02-13 10:03:29,652 - Knowledge - INFO - [LLM_CALL] Completed: transformer.py:chunk1, Duration: 27046ms, PromptTokens: 6110, CompletionTokens: 478, Cost: $0.00080
+2026-02-13 10:03:29,706 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/transformer.py
+2026-02-13 10:03:29,944 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/box_ops.py
+2026-02-13 10:03:30,151 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/transforms.py
+2026-02-13 10:03:30,479 - Knowledge - INFO - [LLM_CALL] Completed: engine.py:chunk1, Duration: 27785ms, PromptTokens: 3806, CompletionTokens: 423, Cost: $0.00055
+2026-02-13 10:03:30,480 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/engine.py
+2026-02-13 10:03:31,087 - Knowledge - INFO - [LLM_CALL] Completed: backbone.py:chunk1, Duration: 28487ms, PromptTokens: 2850, CompletionTokens: 505, Cost: $0.00049
+2026-02-13 10:03:31,107 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/backbone.py
+2026-02-13 10:03:31,271 - Knowledge - INFO - [LLM_CALL] Completed: run_with_submitit.py:chunk1, Duration: 28579ms, PromptTokens: 2390, CompletionTokens: 562, Cost: $0.00046
+2026-02-13 10:03:31,272 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/run_with_submitit.py
+2026-02-13 10:03:31,514 - Knowledge - INFO - [LLM_CALL] Completed: plot_utils.py:chunk1, Duration: 28894ms, PromptTokens: 3046, CompletionTokens: 344, Cost: $0.00044
+2026-02-13 10:03:31,515 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/util/plot_utils.py
+2026-02-13 10:03:31,605 - Knowledge - INFO - [LLM_CALL] Completed: main.py:chunk1, Duration: 29230ms, PromptTokens: 5632, CompletionTokens: 438, Cost: $0.00074
+2026-02-13 10:03:31,605 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/main.py
+2026-02-13 10:03:31,769 - Knowledge - INFO - [LLM_CALL] Completed: coco.py:chunk1, Duration: 29278ms, PromptTokens: 3442, CompletionTokens: 445, Cost: $0.00052
+2026-02-13 10:03:31,769 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco.py
+2026-02-13 10:03:31,774 - Knowledge - INFO - [LLM_CALL] Completed: detr.py:chunk1, Duration: 29162ms, PromptTokens: 5762, CompletionTokens: 694, Cost: $0.00085
+2026-02-13 10:03:31,803 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/detr.py
+2026-02-13 10:03:32,086 - Knowledge - INFO - [LLM_CALL] Completed: hubconf.py:chunk1, Duration: 29770ms, PromptTokens: 3964, CompletionTokens: 601, Cost: $0.00064
+2026-02-13 10:03:32,087 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/hubconf.py
+2026-02-13 10:03:32,390 - Knowledge - INFO - Processing batch of 2 files
+2026-02-13 10:03:32,390 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/backbone.py
+2026-02-13 10:03:32,562 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/test_all.py
+2026-02-13 10:03:32,947 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/models/detr.py
+2026-02-13 10:03:33,241 - Knowledge - INFO - [LLM_CALL] Completed: train_net.py:chunk1, Duration: 30839ms, PromptTokens: 3008, CompletionTokens: 682, Cost: $0.00057
+2026-02-13 10:03:33,244 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/d2/train_net.py
+2026-02-13 10:03:34,079 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 162, Duration: 0ms
+2026-02-13 10:03:34,087 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 8ms
+2026-02-13 10:03:34,092 - Knowledge - INFO - Progress: 67.6% | Files: 23/34 | Rate: 0.68 files/sec | Queue: 0
+2026-02-13 10:03:34,185 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:34,187 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/position_encoding.py
+2026-02-13 10:03:34,443 - Knowledge - INFO - [LLM_CALL] Completed: misc.py:chunk1, Duration: 32079ms, PromptTokens: 8032, CompletionTokens: 896, Cost: $0.00116
+2026-02-13 10:03:34,445 - Knowledge - INFO - done ingest for /app/data/T0002/219777/b0809rn/Object-detection/util/misc.py
+2026-02-13 10:03:34,521 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/README.md
+2026-02-13 10:03:34,522 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:34,524 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/dataset_mapper.py
+2026-02-13 10:03:34,525 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:34,526 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/detr.py
+2026-02-13 10:03:34,527 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/hubconf.py
+2026-02-13 10:03:34,529 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/tox.ini
+2026-02-13 10:03:34,533 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/detr.py
+2026-02-13 10:03:34,537 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/configs/detr_segm_256_6_6_torchvision.yaml
+2026-02-13 10:03:34,537 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/main.py
+2026-02-13 10:03:34,541 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/requirements.txt
+2026-02-13 10:03:34,673 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/models/transformer.py
+2026-02-13 10:03:34,873 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/engine.py
+2026-02-13 10:03:34,891 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:34,892 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco_panoptic.py
+2026-02-13 10:03:35,015 - Knowledge - INFO - Processing batch of 4 files
+2026-02-13 10:03:35,016 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/coco.py
+2026-02-13 10:03:35,142 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/misc.py
+2026-02-13 10:03:35,145 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/train_net.py
+2026-02-13 10:03:35,147 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/d2/detr/config.py
+2026-02-13 10:03:35,148 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/util/plot_utils.py
+2026-02-13 10:03:35,151 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/run_with_submitit.py
+2026-02-13 10:03:35,155 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/219777/b0809rn/Object-detection/datasets/__init__.py
+2026-02-13 10:03:35,851 - Knowledge - INFO - Knowledge creation complete
+2026-02-13 10:03:35,852 - Knowledge - INFO - ==================================================
+2026-02-13 10:03:35,852 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-02-13 10:03:35,852 - Knowledge - INFO - ==================================================
+2026-02-13 10:03:35,852 - Knowledge - INFO - Total processing time: 35.58 seconds (0.59 minutes)
+2026-02-13 10:03:35,853 - Knowledge - INFO - Files processed: 0
+2026-02-13 10:03:35,853 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-02-13 10:03:35,853 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-02-13 10:03:35,854 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-02-13 10:03:35,854 - Knowledge - INFO - LLM Processing: 487.42s (1369.9%)
+2026-02-13 10:03:35,855 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-02-13 10:03:35,855 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-02-13 10:03:35,856 - Knowledge - INFO - WebSocket Communication: 0.20s (0.6%)
+2026-02-13 10:03:35,857 - Knowledge - INFO - 
+[LLM_STATS]
+2026-02-13 10:03:35,857 - Knowledge - INFO - Total LLM calls: 19
+2026-02-13 10:03:35,857 - Knowledge - INFO - Average LLM response time: 25654ms
+2026-02-13 10:03:35,858 - Knowledge - INFO - Average prompt tokens: 4309.5
+2026-02-13 10:03:35,858 - Knowledge - INFO - Average completion tokens: 533.6
+2026-02-13 10:03:35,859 - Knowledge - INFO - Total prompt tokens: 81880
+2026-02-13 10:03:35,859 - Knowledge - INFO - Total completion tokens: 10139
+2026-02-13 10:03:35,859 - Knowledge - INFO - Total LLM cost: $0.0122
+2026-02-13 10:03:35,859 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-02-13 10:03:35,859 - Knowledge - INFO - MongoDB operations: 0
+2026-02-13 10:03:35,859 - Knowledge - INFO - Redis operations: 0
+2026-02-13 10:03:35,860 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-02-13 10:03:35,860 - Knowledge - INFO - WebSocket messages sent: 9
+2026-02-13 10:03:35,861 - Knowledge - INFO - Average message size: 108.4 bytes
+2026-02-13 10:03:35,861 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-02-13 10:03:35,861 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-02-13 10:03:35,861 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-02-13 10:03:35,861 - Knowledge - INFO - ==================================================
+2026-02-13 10:03:35,862 - Knowledge - INFO - ================================================================================
+2026-02-13 10:03:35,862 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:03:35,863 - Knowledge - INFO - ================================================================================
+2026-02-13 10:03:35,863 - Knowledge - INFO - ⏱️  Elapsed Time: 35.6s (0.6 min)
+2026-02-13 10:03:35,863 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:03:35,864 - Knowledge - INFO - ⚡ Throughput: 0.96 files/sec
+2026-02-13 10:03:35,864 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:03:35,864 - Knowledge - INFO - 
+2026-02-13 10:03:35,865 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:03:35,865 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:03:35,865 - Knowledge - INFO - 
+2026-02-13 10:03:35,865 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:03:35,865 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:03:35,866 - Knowledge - INFO - 
+2026-02-13 10:03:35,866 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:03:35,866 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:03:35,867 - Knowledge - INFO - 
+2026-02-13 10:03:35,867 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:03:35,867 - Knowledge - INFO -    kw10: 57.8% active (active=19.3s, idle=14.1s)
+2026-02-13 10:03:35,868 - Knowledge - INFO -    kw12: 54.7% active (active=18.2s, idle=15.1s)
+2026-02-13 10:03:35,868 - Knowledge - INFO -    kw13: 51.3% active (active=17.0s, idle=16.2s)
+2026-02-13 10:03:35,869 - Knowledge - INFO -    kw11: 52.6% active (active=17.5s, idle=15.8s)
+2026-02-13 10:03:35,869 - Knowledge - INFO -    kw14: 57.2% active (active=19.0s, idle=14.2s)
+2026-02-13 10:03:35,869 - Knowledge - INFO - 
+2026-02-13 10:03:35,869 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:03:35,870 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:03:35,870 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:03:35,870 - Knowledge - WARNING - ⚠️  Low throughput (0.96 files/sec) - may need more threads
+2026-02-13 10:03:35,871 - Knowledge - INFO - ================================================================================
+2026-02-13 10:03:35,871 - Knowledge - INFO - ==================================================
+2026-02-13 10:03:35,871 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-02-13 10:03:35,872 - Knowledge - INFO - ==================================================
+2026-02-13 10:03:35,872 - Knowledge - INFO - Total processing time: 35.65 seconds (0.59 minutes)
+2026-02-13 10:03:35,873 - Knowledge - INFO - Files processed: 34 of 34
+2026-02-13 10:03:35,873 - Knowledge - INFO - Processing rate: 0.95 files/second
+2026-02-13 10:03:35,873 - Knowledge - INFO - WebSocket messages sent: 4
+2026-02-13 10:03:35,874 - Knowledge - INFO - MongoDB operations: 34
+2026-02-13 10:03:35,874 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-02-13 10:03:35,874 - Knowledge - INFO - LLM costs: $0.0134
+2026-02-13 10:03:35,875 - Knowledge - INFO - Prompt tokens: 90354
+2026-02-13 10:03:35,875 - Knowledge - INFO - Completion tokens: 10883
+2026-02-13 10:03:35,875 - Knowledge - INFO - Updating org costs, total cost: 0.013388600000000002
+2026-02-13 10:03:37,349 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 160, Duration: 0ms
+2026-02-13 10:04:00,287 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,288 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,288 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,290 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,290 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,291 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,292 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,293 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,293 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,294 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,294 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,294 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,297 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,298 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,299 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,299 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,299 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,299 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,300 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,300 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,301 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,301 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,302 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,302 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,302 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,303 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,303 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,305 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,305 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,305 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,306 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,307 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,307 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,307 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,308 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,308 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,309 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,309 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,310 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,310 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,311 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,311 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,312 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,312 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,313 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,314 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,314 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,315 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,315 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,315 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,316 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,316 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,317 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,317 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,318 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,318 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,319 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,319 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,320 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,320 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,321 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,321 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,321 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,322 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,322 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,323 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,323 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,324 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,324 - Knowledge - INFO - 📊 PERFORMANCE METRICS (Periodic Report)
+2026-02-13 10:04:00,326 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,326 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,327 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,327 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,328 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,328 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,329 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,329 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,330 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,330 - Knowledge - INFO - 
+2026-02-13 10:04:00,331 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,331 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,332 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,332 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,333 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,333 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,334 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,334 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,335 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,335 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,336 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,336 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,337 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,337 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,338 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,338 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,339 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,339 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,339 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,340 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,341 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,341 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,341 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,342 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,342 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,343 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,343 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,343 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,344 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,344 - Knowledge - INFO - ⏱️  Elapsed Time: 60.0s (1.0 min)
+2026-02-13 10:04:00,345 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,345 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,346 - Knowledge - INFO - 
+2026-02-13 10:04:00,346 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,347 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,347 - Knowledge - INFO - 
+2026-02-13 10:04:00,347 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,348 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,348 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,349 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,349 - Knowledge - INFO - 
+2026-02-13 10:04:00,350 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,351 - Knowledge - INFO - 
+2026-02-13 10:04:00,351 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,352 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,353 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,353 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,354 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,354 - Knowledge - INFO - 
+2026-02-13 10:04:00,354 - Knowledge - INFO - 📁 Files: 34 processed, 12 skipped LLM, 22 LLM processed
+2026-02-13 10:04:00,355 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,355 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,355 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,356 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,357 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,357 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,357 - Knowledge - INFO - 
+2026-02-13 10:04:00,358 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,358 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,359 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,359 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,360 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,361 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,361 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,362 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,362 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,363 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,363 - Knowledge - INFO - 
+2026-02-13 10:04:00,364 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,364 - Knowledge - INFO - ⚡ Throughput: 0.57 files/sec
+2026-02-13 10:04:00,365 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,365 - Knowledge - INFO - 
+2026-02-13 10:04:00,366 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,366 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,368 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,369 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,370 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,370 - Knowledge - INFO - 
+2026-02-13 10:04:00,372 - Knowledge - INFO - 
+2026-02-13 10:04:00,373 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,374 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,374 - Knowledge - INFO - 
+2026-02-13 10:04:00,374 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,375 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,375 - Knowledge - INFO - 
+2026-02-13 10:04:00,376 - Knowledge - INFO - 
+2026-02-13 10:04:00,376 - Knowledge - INFO - 
+2026-02-13 10:04:00,377 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,377 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,378 - Knowledge - INFO - 📋 Queue: 0 queued, 0 in progress
+2026-02-13 10:04:00,378 - Knowledge - INFO - 
+2026-02-13 10:04:00,379 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,379 - Knowledge - INFO - 
+2026-02-13 10:04:00,379 - Knowledge - INFO - 
+2026-02-13 10:04:00,380 - Knowledge - INFO - 
+2026-02-13 10:04:00,380 - Knowledge - INFO - 
+2026-02-13 10:04:00,381 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,381 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,382 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,382 - Knowledge - INFO - 
+2026-02-13 10:04:00,382 - Knowledge - INFO - 
+2026-02-13 10:04:00,383 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,383 - Knowledge - INFO - 
+2026-02-13 10:04:00,384 - Knowledge - INFO - 
+2026-02-13 10:04:00,385 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,385 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,385 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,385 - Knowledge - INFO - 
+2026-02-13 10:04:00,386 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,386 - Knowledge - INFO - 
+2026-02-13 10:04:00,386 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,387 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,387 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,388 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,389 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,389 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,390 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,390 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,390 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,391 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,391 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,392 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,392 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,393 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,393 - Knowledge - INFO - 
+2026-02-13 10:04:00,394 - Knowledge - INFO - 
+2026-02-13 10:04:00,394 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,395 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,395 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,395 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,396 - Knowledge - INFO - 🤖 LLM Metrics:
+2026-02-13 10:04:00,397 - Knowledge - INFO - 
+2026-02-13 10:04:00,397 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,397 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,398 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,398 - Knowledge - INFO - 
+2026-02-13 10:04:00,399 - Knowledge - INFO - 
+2026-02-13 10:04:00,399 - Knowledge - INFO - 
+2026-02-13 10:04:00,400 - Knowledge - INFO - 
+2026-02-13 10:04:00,400 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,400 - Knowledge - INFO - 
+2026-02-13 10:04:00,401 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,402 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,403 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,403 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,404 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,406 - Knowledge - INFO - 
+2026-02-13 10:04:00,406 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,436 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,437 - Knowledge - INFO - 
+2026-02-13 10:04:00,437 - Knowledge - INFO -    Call time: avg=25.062s, max=32.220s, total=551.4s
+2026-02-13 10:04:00,439 - Knowledge - INFO - 
+2026-02-13 10:04:00,440 - Knowledge - INFO - 
+2026-02-13 10:04:00,441 - Knowledge - INFO - 
+2026-02-13 10:04:00,441 - Knowledge - INFO - 
+2026-02-13 10:04:00,442 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,443 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,444 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,445 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,445 - Knowledge - INFO - 
+2026-02-13 10:04:00,446 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,447 - Knowledge - INFO - 
+2026-02-13 10:04:00,449 - Knowledge - INFO - 
+2026-02-13 10:04:00,450 - Knowledge - INFO - 
+2026-02-13 10:04:00,453 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,454 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,455 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,467 - Knowledge - INFO - 
+2026-02-13 10:04:00,468 - Knowledge - INFO - 
+2026-02-13 10:04:00,473 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,474 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,487 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,487 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,488 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,488 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,489 - Knowledge - INFO - 
+2026-02-13 10:04:00,490 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,491 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,491 - Knowledge - INFO - 
+2026-02-13 10:04:00,492 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,492 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,494 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,494 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,494 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,495 - Knowledge - INFO - 
+2026-02-13 10:04:00,496 - Knowledge - INFO - 
+2026-02-13 10:04:00,496 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,498 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,500 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,501 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,503 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,504 - Knowledge - INFO - 
+2026-02-13 10:04:00,505 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,507 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,508 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,509 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,511 - Knowledge - INFO - 
+2026-02-13 10:04:00,512 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,513 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,513 - Knowledge - INFO - 
+2026-02-13 10:04:00,514 - Knowledge - INFO - 💾 I/O Metrics:
+2026-02-13 10:04:00,514 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,518 - Knowledge - INFO - 
+2026-02-13 10:04:00,518 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,519 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,519 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,521 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,522 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,523 - Knowledge - INFO - 
+2026-02-13 10:04:00,523 - Knowledge - INFO - 
+2026-02-13 10:04:00,523 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,524 - Knowledge - INFO - 
+2026-02-13 10:04:00,525 - Knowledge - INFO - 
+2026-02-13 10:04:00,525 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,526 - Knowledge - INFO - 
+2026-02-13 10:04:00,526 - Knowledge - INFO - 
+2026-02-13 10:04:00,527 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,528 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,528 - Knowledge - INFO - 
+2026-02-13 10:04:00,529 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,530 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,530 - Knowledge - INFO - 
+2026-02-13 10:04:00,531 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,531 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,531 - Knowledge - INFO - 
+2026-02-13 10:04:00,531 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,531 - Knowledge - INFO - 
+2026-02-13 10:04:00,533 - Knowledge - INFO - 
+2026-02-13 10:04:00,535 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,535 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,536 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,538 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,539 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,541 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,542 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,542 - Knowledge - INFO -    File I/O: avg=0.002s, total=0.1s
+2026-02-13 10:04:00,543 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,546 - Knowledge - INFO - 
+2026-02-13 10:04:00,547 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,547 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,549 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,549 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,550 - Knowledge - INFO -    kw10: 36.1% active (active=20.8s, idle=36.9s)
+2026-02-13 10:04:00,552 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,554 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,554 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,555 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,555 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,557 - Knowledge - INFO - 
+2026-02-13 10:04:00,559 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,560 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,561 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,561 - Knowledge - INFO -    kw10: 36.1% active (active=20.8s, idle=36.9s)
+2026-02-13 10:04:00,562 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,562 - Knowledge - INFO - 
+2026-02-13 10:04:00,563 - Knowledge - INFO - 
+2026-02-13 10:04:00,563 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,564 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,564 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,565 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,565 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,566 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,566 - Knowledge - INFO -    kw12: 34.2% active (active=19.7s, idle=37.9s)
+2026-02-13 10:04:00,567 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,567 - Knowledge - INFO - 
+2026-02-13 10:04:00,567 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,568 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,569 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,569 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,570 - Knowledge - INFO - 
+2026-02-13 10:04:00,570 - Knowledge - INFO - 
+2026-02-13 10:04:00,571 - Knowledge - INFO - 
+2026-02-13 10:04:00,571 - Knowledge - INFO -    kw12: 34.2% active (active=19.7s, idle=37.9s)
+2026-02-13 10:04:00,571 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,572 - Knowledge - INFO - 🔄 Batch Processing:
+2026-02-13 10:04:00,572 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,573 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,573 - Knowledge - INFO -    kw10: 36.1% active (active=20.8s, idle=36.9s)
+2026-02-13 10:04:00,574 - Knowledge - INFO - 
+2026-02-13 10:04:00,574 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,575 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,575 - Knowledge - INFO - 
+2026-02-13 10:04:00,575 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,576 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,577 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,578 - Knowledge - INFO - 
+2026-02-13 10:04:00,578 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,579 - Knowledge - INFO - 
+2026-02-13 10:04:00,579 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,579 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,580 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,581 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,582 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,582 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,583 - Knowledge - INFO -    Batches: 9, avg_time=25.49s, avg_throughput=0.16 files/sec
+2026-02-13 10:04:00,585 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,586 - Knowledge - INFO - 
+2026-02-13 10:04:00,586 - Knowledge - INFO -    kw12: 34.2% active (active=19.7s, idle=37.9s)
+2026-02-13 10:04:00,587 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,587 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,588 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,588 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,589 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,589 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,590 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,590 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,591 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,591 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,593 - Knowledge - INFO - 
+2026-02-13 10:04:00,593 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,594 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,594 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,595 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,595 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,596 - Knowledge - INFO - 
+2026-02-13 10:04:00,597 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,597 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,598 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,598 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,599 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,599 - Knowledge - INFO - 
+2026-02-13 10:04:00,599 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,600 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,600 - Knowledge - INFO - 
+2026-02-13 10:04:00,601 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,601 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,601 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,602 - Knowledge - INFO -    kw13: 29.5% active (active=17.0s, idle=40.6s)
+2026-02-13 10:04:00,602 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,603 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,603 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,603 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,604 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,605 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,605 - Knowledge - INFO - 
+2026-02-13 10:04:00,605 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,606 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,607 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,607 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,607 - Knowledge - INFO - 
+2026-02-13 10:04:00,608 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,608 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,609 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,609 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,610 - Knowledge - INFO - 
+2026-02-13 10:04:00,610 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,611 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,611 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,612 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,612 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,617 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,618 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,638 - Knowledge - INFO - 
+2026-02-13 10:04:00,639 - Knowledge - INFO - 👷 Worker Utilization:
+2026-02-13 10:04:00,640 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,640 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,642 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,643 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,643 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,644 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,644 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,646 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,646 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,647 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,648 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,649 - Knowledge - INFO -    kw12: 34.2% active (active=19.7s, idle=37.9s)
+2026-02-13 10:04:00,649 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,650 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,650 - Knowledge - INFO -    kw13: 29.5% active (active=17.0s, idle=40.6s)
+2026-02-13 10:04:00,651 - Knowledge - INFO -    kw13: 29.5% active (active=17.0s, idle=40.6s)
+2026-02-13 10:04:00,651 - Knowledge - INFO -    kw13: 29.5% active (active=17.0s, idle=40.6s)
+2026-02-13 10:04:00,652 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,652 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,653 - Knowledge - INFO -    kw10: 36.0% active (active=20.8s, idle=37.0s)
+2026-02-13 10:04:00,653 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,653 - Knowledge - INFO - 
+2026-02-13 10:04:00,654 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,655 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,655 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,655 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,656 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,656 - Knowledge - INFO -    kw13: 29.5% active (active=17.0s, idle=40.6s)
+2026-02-13 10:04:00,657 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,657 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,658 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,658 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,659 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,659 - Knowledge - INFO - 
+2026-02-13 10:04:00,661 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,661 - Knowledge - INFO -    kw11: 32.9% active (active=19.0s, idle=38.8s)
+2026-02-13 10:04:00,662 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,662 - Knowledge - INFO - 
+2026-02-13 10:04:00,662 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,663 - Knowledge - INFO -    kw12: 34.1% active (active=19.7s, idle=38.0s)
+2026-02-13 10:04:00,663 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,664 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,665 - Knowledge - INFO - 
+2026-02-13 10:04:00,665 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,666 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,666 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,667 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,668 - Knowledge - INFO -    kw11: 32.9% active (active=19.0s, idle=38.8s)
+2026-02-13 10:04:00,669 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,669 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,669 - Knowledge - INFO - 
+2026-02-13 10:04:00,670 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,670 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,671 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,671 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,671 - Knowledge - INFO - 
+2026-02-13 10:04:00,672 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,672 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,673 - Knowledge - INFO -    kw13: 29.6% active (active=17.0s, idle=40.5s)
+2026-02-13 10:04:00,673 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,674 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,674 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,675 - Knowledge - INFO - 
+2026-02-13 10:04:00,675 - Knowledge - INFO - 
+2026-02-13 10:04:00,676 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,677 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,677 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,677 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,678 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,678 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,679 - Knowledge - INFO - 
+2026-02-13 10:04:00,679 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,680 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,680 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,681 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,681 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,682 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,682 - Knowledge - INFO -    kw11: 33.0% active (active=19.0s, idle=38.7s)
+2026-02-13 10:04:00,683 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,683 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,684 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,684 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,685 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,685 - Knowledge - INFO - 
+2026-02-13 10:04:00,686 - Knowledge - INFO - 
+2026-02-13 10:04:00,686 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,687 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,687 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,688 - Knowledge - INFO - 
+2026-02-13 10:04:00,688 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,689 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,689 - Knowledge - INFO - 
+2026-02-13 10:04:00,690 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,690 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,690 - Knowledge - INFO -    kw14: 35.5% active (active=20.5s, idle=37.1s)
+2026-02-13 10:04:00,691 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,691 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,692 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,693 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,694 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,694 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,695 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,695 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,695 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,696 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,696 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,697 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,697 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,698 - Knowledge - INFO - 
+2026-02-13 10:04:00,698 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,699 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,699 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,699 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,700 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,701 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,702 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,703 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,703 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,703 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,704 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,705 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,705 - Knowledge - INFO - 🔍 Bottleneck Analysis:
+2026-02-13 10:04:00,705 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,739 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,740 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,741 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,741 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,742 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,742 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,743 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,744 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,744 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,745 - Knowledge - WARNING - ⚠️  Slow LLM calls (avg: 25.06s) - may indicate API rate limiting
+2026-02-13 10:04:00,746 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,746 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,747 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,747 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,748 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,748 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,751 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,751 - Knowledge - WARNING - 🚨 Very slow LLM calls detected (max: 32.22s)
+2026-02-13 10:04:00,753 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,753 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,754 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,755 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:00,755 - Knowledge - WARNING - ⚠️  Low throughput (0.57 files/sec) - may need more threads
+2026-02-13 10:04:00,756 - Knowledge - INFO - ================================================================================
+2026-02-13 10:04:03,991 - Knowledge - INFO - Saving knowledge to Redis...
+2026-02-13 10:04:04,010 - Knowledge - INFO - Knowledge saved to Redis successfully
