@@ -1,34 +1,35 @@
-%% Mermaid mindmap diagram with explicit styling to keep node text black inside boxes,
-%% improving readability when rendered in dark-themed Markdown viewers.
+%% Mermaid mindmap diagram with explicit styling for dark-theme readability.
 %%
-%% Note: Mermaid theme variables are honored by GitHub and many Mermaid renderers.
-%% If your renderer ignores themeVariables, you may need to set the Mermaid theme to "neutral"
-%% or adjust the renderer configuration accordingly.
+%% Goal:
+%% - Avoid light/yellow-ish fills that reduce readability in dark UIs
+%% - Ensure high-contrast text and borders
+%% - Keep diagram background transparent so the surrounding page theme shows through
 %%
+%% Note: Different Mermaid renderers vary in which themeVariables they honor for mindmaps.
+%% These variables cover the common cases and are intentionally explicit.
+
 %%{init: {
   "theme": "base",
   "themeVariables": {
-    "primaryTextColor": "#000000",
-    "secondaryTextColor": "#000000",
-    "tertiaryTextColor": "#000000",
-    "textColor": "#000000",
+    "background": "transparent",
 
-    /*
-     * Mindmap renderer can require mindmap-specific variables to reliably control
-     * node label fill across different Markdown viewers/themes.
-     */
-    "nodeTextColor": "#000000",
-    "rootNodeTextColor": "#000000",
+    "primaryColor": "#111827",
+    "secondaryColor": "#1f2937",
+    "tertiaryColor": "#374151",
 
-    "lineColor": "#6b7280",
+    "primaryBorderColor": "#e5e7eb",
+    "secondaryBorderColor": "#d1d5db",
+    "tertiaryBorderColor": "#cbd5e1",
 
-    "primaryColor": "#ffffff",
-    "secondaryColor": "#f3f4f6",
-    "tertiaryColor": "#e5e7eb",
+    "textColor": "#f9fafb",
+    "primaryTextColor": "#f9fafb",
+    "secondaryTextColor": "#f9fafb",
+    "tertiaryTextColor": "#f9fafb",
 
-    "primaryBorderColor": "#9ca3af",
-    "secondaryBorderColor": "#9ca3af",
-    "tertiaryBorderColor": "#9ca3af"
+    "nodeTextColor": "#f9fafb",
+    "rootNodeTextColor": "#ffffff",
+
+    "lineColor": "#d1d5db"
   }
 }}%%
 
