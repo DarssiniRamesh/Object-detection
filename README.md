@@ -25,6 +25,48 @@ Additionnally, we provide a Detectron2 wrapper in the d2/ folder. See the readme
 For details see [End-to-End Object Detection with Transformers](https://ai.facebook.com/research/publications/end-to-end-object-detection-with-transformers) by Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko.
 
 See our [blog post](https://ai.facebook.com/blog/end-to-end-object-detection-with-transformers/) to learn more about end to end object detection with transformers.
+# Feature Categories (Mermaid mind map)
+
+```mermaid
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryTextColor": "#000000",
+    "secondaryTextColor": "#000000",
+    "tertiaryTextColor": "#000000",
+    "lineColor": "#6b7280",
+
+    "primaryColor": "#ffffff",
+    "secondaryColor": "#f3f4f6",
+    "tertiaryColor": "#e5e7eb",
+
+    "primaryBorderColor": "#9ca3af",
+    "secondaryBorderColor": "#9ca3af",
+    "tertiaryBorderColor": "#9ca3af"
+  }
+}}%%
+mindmap
+  root((Feature Categories))
+    Training
+      Single-node
+      Multi-node / SubmitIt
+      Detectron2 wrapper
+    Evaluation
+      COCO metrics
+      Panoptic metrics
+    Models
+      DETR (R50/R101)
+      DC5 variants
+      Segmentation head
+    Export
+      TorchScript
+      ONNX
+    Utilities
+      Plotting
+      Box ops
+      Transforms
+```
+
 # Model Zoo
 We provide baseline DETR and DETR-DC5 models, and plan to include more in future.
 AP is computed on COCO 2017 val5k, and inference time is over the first 100 val5k COCO images,
