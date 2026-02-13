@@ -34,6 +34,15 @@ See our [blog post](https://ai.facebook.com/blog/end-to-end-object-detection-wit
     "primaryTextColor": "#000000",
     "secondaryTextColor": "#000000",
     "tertiaryTextColor": "#000000",
+    "textColor": "#000000",
+
+    /*
+     * Mindmap renderer can require mindmap-specific variables to reliably control
+     * node label fill across different Markdown viewers/themes.
+     */
+    "nodeTextColor": "#000000",
+    "rootNodeTextColor": "#000000",
+
     "lineColor": "#6b7280",
 
     "primaryColor": "#ffffff",
