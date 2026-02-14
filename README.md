@@ -22,6 +22,10 @@ definitions with standard training loops.
 
 Additionnally, we provide a Detectron2 wrapper in the d2/ folder. See the readme there for more information.
 
+## Architecture / components
+
+- [DETR Training Container — Components](DETR_TRAINING_CONTAINER_COMPONENTS.md) (includes a Mermaid component diagram with white arrows for dark theme readability)
+
 For details see [End-to-End Object Detection with Transformers](https://ai.facebook.com/research/publications/end-to-end-object-detection-with-transformers) by Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko.
 
 See our [blog post](https://ai.facebook.com/blog/end-to-end-object-detection-with-transformers/) to learn more about end to end object detection with transformers.
