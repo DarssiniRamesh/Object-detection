@@ -2,9 +2,7 @@
 
 This page documents the main components of the DETR training codebase and how they interact.
 
-## Component diagram (Mermaid)
-
-> Dark-theme note: the Mermaid init block below forces **arrow/link stroke color to white** and uses light text colors so edges and labels remain readable.
+At a high level, the training flow is:
 
 ```mermaid
 %%{init: {
@@ -22,7 +20,7 @@ This page documents the main components of the DETR training codebase and how th
   }
 }}%%
 flowchart LR
-  %% Classes below enforce white arrow/link strokes, while keeping labels readable.
+  %% Force white arrow/link strokes, while keeping labels readable in dark theme.
   linkStyle default stroke:#ffffff,stroke-width:2px,color:#f5f5f5
 
   subgraph CLI["CLI entrypoints"]
@@ -79,6 +77,8 @@ flowchart LR
   segm --> boxops
   plot --> detr
 ```
+
+> Dark-theme note: the Mermaid init block above forces **arrow/link stroke color to white** and uses light text colors so edges and labels remain readable.
 
 ## Notes
 
