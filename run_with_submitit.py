@@ -5,7 +5,6 @@ A script to run multinode training with submitit.
 import argparse
 import os
 import uuid
-from pathlib import Path
 
 import main as detection
 import submitit

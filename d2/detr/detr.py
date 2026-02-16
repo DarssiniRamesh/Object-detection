@@ -1,29 +1,20 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
-import logging
-import math
-from typing import List
-
 import numpy as np
 import torch
-import torch.distributed as dist
 import torch.nn.functional as F
-from scipy.optimize import linear_sum_assignment
 from torch import nn
 
-from detectron2.layers import ShapeSpec
 from detectron2.modeling import META_ARCH_REGISTRY, build_backbone, detector_postprocess
-from detectron2.structures import Boxes, ImageList, Instances, BitMasks, PolygonMasks
-from detectron2.utils.logger import log_first_n
-from fvcore.nn import giou_loss, smooth_l1_loss
+from detectron2.structures import BitMasks, Boxes, ImageList, Instances
 from models.backbone import Joiner
 from models.detr import DETR, SetCriterion
 from models.matcher import HungarianMatcher
 from models.position_encoding import PositionEmbeddingSine
+from models.segmentation import DETRsegm, PostProcessSegm
 from models.transformer import Transformer
-from models.segmentation import DETRsegm, PostProcessPanoptic, PostProcessSegm
+from datasets.coco import convert_coco_poly_to_mask
 from util.box_ops import box_cxcywh_to_xyxy, box_xyxy_to_cxcywh
 from util.misc import NestedTensor
-from datasets.coco import convert_coco_poly_to_mask
 
 __all__ = ["Detr"]
 

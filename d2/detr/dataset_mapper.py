@@ -7,7 +7,6 @@ import torch
 
 from detectron2.data import detection_utils as utils
 from detectron2.data import transforms as T
-from detectron2.data.transforms import TransformGen
 
 __all__ = ["DetrDatasetMapper"]
 

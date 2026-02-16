@@ -8,7 +8,7 @@ from typing import List
 
 from models.matcher import HungarianMatcher
 from models.position_encoding import PositionEmbeddingSine, PositionEmbeddingLearned
-from models.backbone import Backbone, Joiner, BackboneBase
+from models.backbone import Backbone
 from util import box_ops
 from util.misc import nested_tensor_from_tensor_list
 from hubconf import detr_resnet50, detr_resnet50_panoptic

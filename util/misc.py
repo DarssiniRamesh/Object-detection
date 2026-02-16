@@ -11,17 +11,17 @@ from collections import defaultdict, deque
 import datetime
 import pickle
 from packaging import version
-from typing import Optional, List, Union, Sequence
+from typing import Optional, List, Union
 
 import torch
 import torch.distributed as dist
+import torchvision
 from torch import Tensor
 
 # Type alias used for `.to(device)` signatures throughout this file.
 Device = Union[str, torch.device]
 
 # needed due to empty tensor bug in pytorch and torchvision 0.5
-import torchvision
 if version.parse(torchvision.__version__) < version.parse('0.7'):
     from torchvision.ops import _new_empty_tensor
     from torchvision.ops.misc import _output_size
