@@ -71,7 +71,9 @@ class CocoPanoptic:
         target["orig_size"] = torch.as_tensor([int(h), int(w)])
         if "segments_info" in ann_info:
             for name in ["iscrowd", "area"]:
-                target[name] = torch.tensor([ann[name] for ann in ann_info["segments_info"]])
+                target[name] = torch.tensor(
+                    [ann[name] for ann in ann_info["segments_info"]]
+                )
 
         if self.transforms is not None:
             img, target = self.transforms(img, target)
@@ -91,8 +93,12 @@ class CocoPanoptic:
 def build(image_set, args):
     img_folder_root = Path(args.coco_path)
     ann_folder_root = Path(args.coco_panoptic_path)
-    assert img_folder_root.exists(), f"provided COCO path {img_folder_root} does not exist"
-    assert ann_folder_root.exists(), f"provided COCO path {ann_folder_root} does not exist"
+    assert img_folder_root.exists(), (
+        f"provided COCO path {img_folder_root} does not exist"
+    )
+    assert ann_folder_root.exists(), (
+        f"provided COCO path {ann_folder_root} does not exist"
+    )
     mode = "panoptic"
     PATHS = {
         "train": ("train2017", Path("annotations") / f"{mode}_train2017.json"),
