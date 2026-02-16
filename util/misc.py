@@ -11,11 +11,14 @@ from collections import defaultdict, deque
 import datetime
 import pickle
 from packaging import version
-from typing import Optional, List
+from typing import Optional, List, Union, Sequence
 
 import torch
 import torch.distributed as dist
 from torch import Tensor
+
+# Type alias used for `.to(device)` signatures throughout this file.
+Device = Union[str, torch.device]
 
 # needed due to empty tensor bug in pytorch and torchvision 0.5
 import torchvision
@@ -462,7 +465,9 @@ def interpolate(input, size=None, scale_factor=None, mode="nearest", align_corne
             )
 
         output_shape = _output_size(2, input, size, scale_factor)
-        output_shape = list(input.shape[:-2]) + list(output_shape)
-        return _new_empty_tensor(input, output_shape)
+        # `_output_size` returns a tuple; convert to list to match `output_shape`'s intended list type.
+        output_shape_list: List[int] = list(output_shape)
+        output_shape_list = list(input.shape[:-2]) + output_shape_list
+        return _new_empty_tensor(input, output_shape_list)
     else:
         return torchvision.ops.misc.interpolate(input, size, scale_factor, mode, align_corners)
