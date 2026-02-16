@@ -20,7 +20,7 @@ __all__ = ["Detr"]
 
 
 class MaskedBackbone(nn.Module):
-    """ This is a thin wrapper around D2's backbone to provide padding masking"""
+    """This is a thin wrapper around D2's backbone to provide padding masking"""
 
     def __init__(self, cfg):
         super().__init__()
@@ -46,7 +46,9 @@ class MaskedBackbone(nn.Module):
         assert len(feature_shapes) == len(self.feature_strides)
         for idx, shape in enumerate(feature_shapes):
             N, _, H, W = shape
-            masks_per_feature_level = torch.ones((N, H, W), dtype=torch.bool, device=device)
+            masks_per_feature_level = torch.ones(
+                (N, H, W), dtype=torch.bool, device=device
+            )
             for img_idx, (h, w) in enumerate(image_sizes):
                 masks_per_feature_level[
                     img_idx,
@@ -103,29 +105,37 @@ class Detr(nn.Module):
         )
 
         self.detr = DETR(
-            backbone, transformer, num_classes=self.num_classes, num_queries=num_queries, aux_loss=deep_supervision
+            backbone,
+            transformer,
+            num_classes=self.num_classes,
+            num_queries=num_queries,
+            aux_loss=deep_supervision,
         )
         if self.mask_on:
             frozen_weights = cfg.MODEL.DETR.FROZEN_WEIGHTS
-            if frozen_weights != '':
+            if frozen_weights != "":
                 print("LOAD pre-trained weights")
-                weight = torch.load(frozen_weights, map_location=lambda storage, loc: storage)['model']
+                weight = torch.load(
+                    frozen_weights, map_location=lambda storage, loc: storage
+                )["model"]
                 new_weight = {}
                 for k, v in weight.items():
-                    if 'detr.' in k:
-                        new_weight[k.replace('detr.', '')] = v
+                    if "detr." in k:
+                        new_weight[k.replace("detr.", "")] = v
                     else:
                         print(f"Skipping loading weight {k} from frozen model")
                 del weight
                 self.detr.load_state_dict(new_weight)
                 del new_weight
-            self.detr = DETRsegm(self.detr, freeze_detr=(frozen_weights != ''))
+            self.detr = DETRsegm(self.detr, freeze_detr=(frozen_weights != ""))
             self.seg_postprocess = PostProcessSegm
 
         self.detr.to(self.device)
 
         # building criterion
-        matcher = HungarianMatcher(cost_class=1, cost_bbox=l1_weight, cost_giou=giou_weight)
+        matcher = HungarianMatcher(
+            cost_class=1, cost_bbox=l1_weight, cost_giou=giou_weight
+        )
         weight_dict = {"loss_ce": 1, "loss_bbox": l1_weight}
         weight_dict["loss_giou"] = giou_weight
         if deep_supervision:
@@ -137,7 +147,11 @@ class Detr(nn.Module):
         if self.mask_on:
             losses += ["masks"]
         self.criterion = SetCriterion(
-            self.num_classes, matcher=matcher, weight_dict=weight_dict, eos_coef=no_object_weight, losses=losses,
+            self.num_classes,
+            matcher=matcher,
+            weight_dict=weight_dict,
+            eos_coef=no_object_weight,
+            losses=losses,
         )
         self.criterion.to(self.device)
 
@@ -183,7 +197,9 @@ class Detr(nn.Module):
             mask_pred = output["pred_masks"] if self.mask_on else None
             results = self.inference(box_cls, box_pred, mask_pred, images.image_sizes)
             processed_results = []
-            for results_per_image, input_per_image, image_size in zip(results, batched_inputs, images.image_sizes):
+            for results_per_image, input_per_image, image_size in zip(
+                results, batched_inputs, images.image_sizes
+            ):
                 height = input_per_image.get("height", image_size[0])
                 width = input_per_image.get("width", image_size[1])
                 r = detector_postprocess(results_per_image, height, width)
@@ -194,15 +210,17 @@ class Detr(nn.Module):
         new_targets = []
         for targets_per_image in targets:
             h, w = targets_per_image.image_size
-            image_size_xyxy = torch.as_tensor([w, h, w, h], dtype=torch.float, device=self.device)
+            image_size_xyxy = torch.as_tensor(
+                [w, h, w, h], dtype=torch.float, device=self.device
+            )
             gt_classes = targets_per_image.gt_classes
             gt_boxes = targets_per_image.gt_boxes.tensor / image_size_xyxy
             gt_boxes = box_xyxy_to_cxcywh(gt_boxes)
             new_targets.append({"labels": gt_classes, "boxes": gt_boxes})
-            if self.mask_on and hasattr(targets_per_image, 'gt_masks'):
+            if self.mask_on and hasattr(targets_per_image, "gt_masks"):
                 gt_masks = targets_per_image.gt_masks
                 gt_masks = convert_coco_poly_to_mask(gt_masks.polygons, h, w)
-                new_targets[-1].update({'masks': gt_masks})
+                new_targets[-1].update({"masks": gt_masks})
         return new_targets
 
     def inference(self, box_cls, box_pred, mask_pred, image_sizes):
@@ -224,18 +242,28 @@ class Detr(nn.Module):
         # For each box we assign the best class or the second best if the best on is `no_object`.
         scores, labels = F.softmax(box_cls, dim=-1)[:, :, :-1].max(-1)
 
-        for i, (scores_per_image, labels_per_image, box_pred_per_image, image_size) in enumerate(zip(
-            scores, labels, box_pred, image_sizes
-        )):
+        for i, (
+            scores_per_image,
+            labels_per_image,
+            box_pred_per_image,
+            image_size,
+        ) in enumerate(zip(scores, labels, box_pred, image_sizes)):
             result = Instances(image_size)
             result.pred_boxes = Boxes(box_cxcywh_to_xyxy(box_pred_per_image))
 
             result.pred_boxes.scale(scale_x=image_size[1], scale_y=image_size[0])
             if self.mask_on:
-                mask = F.interpolate(mask_pred[i].unsqueeze(0), size=image_size, mode='bilinear', align_corners=False)
+                mask = F.interpolate(
+                    mask_pred[i].unsqueeze(0),
+                    size=image_size,
+                    mode="bilinear",
+                    align_corners=False,
+                )
                 mask = mask[0].sigmoid() > 0.5
                 B, N, H, W = mask_pred.shape
-                mask = BitMasks(mask.cpu()).crop_and_resize(result.pred_boxes.tensor.cpu(), 32)
+                mask = BitMasks(mask.cpu()).crop_and_resize(
+                    result.pred_boxes.tensor.cpu(), 32
+                )
                 result.pred_masks = mask.unsqueeze(1).to(mask_pred[0].device)
 
             result.scores = scores_per_image

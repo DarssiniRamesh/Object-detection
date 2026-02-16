@@ -2,6 +2,7 @@
 """
 Helper script to convert models trained with the main version of DETR to be used with the Detectron2 version.
 """
+
 import argparse
 
 import numpy as np
@@ -11,8 +12,18 @@ import torch
 def parse_args():
     parser = argparse.ArgumentParser("D2 model converter")
 
-    parser.add_argument("--source_model", default="", type=str, help="Path or url to the DETR model to convert")
-    parser.add_argument("--output_model", default="", type=str, help="Path where to save the converted model")
+    parser.add_argument(
+        "--source_model",
+        default="",
+        type=str,
+        help="Path or url to the DETR model to convert",
+    )
+    parser.add_argument(
+        "--output_model",
+        default="",
+        type=str,
+        help="Path where to save the converted model",
+    )
     return parser.parse_args()
 
 
@@ -30,7 +41,9 @@ def main():
     coco_idx = np.array(coco_idx)
 
     if args.source_model.startswith("https"):
-        checkpoint = torch.hub.load_state_dict_from_url(args.source_model, map_location="cpu", check_hash=True)
+        checkpoint = torch.hub.load_state_dict_from_url(
+            args.source_model, map_location="cpu", check_hash=True
+        )
     else:
         checkpoint = torch.load(args.source_model, map_location="cpu")
     model_to_convert = checkpoint["model"]
@@ -56,7 +69,11 @@ def main():
             if v.shape[0] == 92:
                 shape_old = v.shape
                 model_converted[k] = v[coco_idx]
-                print("Head conversion: changing shape from {} to {}".format(shape_old, model_converted[k].shape))
+                print(
+                    "Head conversion: changing shape from {} to {}".format(
+                        shape_old, model_converted[k].shape
+                    )
+                )
                 continue
         model_converted[k] = model_to_convert[old_k].detach()
 

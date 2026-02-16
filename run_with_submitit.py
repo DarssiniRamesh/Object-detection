@@ -2,6 +2,7 @@
 """
 A script to run multinode training with submitit.
 """
+
 import argparse
 import os
 import uuid
@@ -13,11 +14,19 @@ import submitit
 
 def parse_args():
     detection_parser = detection.get_args_parser()
-    parser = argparse.ArgumentParser("Submitit for detection", parents=[detection_parser])
-    parser.add_argument("--ngpus", default=8, type=int, help="Number of gpus to request on each node")
-    parser.add_argument("--nodes", default=4, type=int, help="Number of nodes to request")
+    parser = argparse.ArgumentParser(
+        "Submitit for detection", parents=[detection_parser]
+    )
+    parser.add_argument(
+        "--ngpus", default=8, type=int, help="Number of gpus to request on each node"
+    )
+    parser.add_argument(
+        "--nodes", default=4, type=int, help="Number of nodes to request"
+    )
     parser.add_argument("--timeout", default=60, type=int, help="Duration of the job")
-    parser.add_argument("--job_dir", default="", type=str, help="Job dir. Leave empty for automatic.")
+    parser.add_argument(
+        "--job_dir", default="", type=str, help="Job dir. Leave empty for automatic."
+    )
     return parser.parse_args()
 
 
@@ -66,7 +75,9 @@ class Trainer(object):
         from pathlib import Path
 
         job_env = submitit.JobEnvironment()
-        self.args.output_dir = Path(str(self.args.output_dir).replace("%j", str(job_env.job_id)))
+        self.args.output_dir = Path(
+            str(self.args.output_dir).replace("%j", str(job_env.job_id))
+        )
         self.args.gpu = job_env.local_rank
         self.args.rank = job_env.global_rank
         self.args.world_size = job_env.num_tasks
