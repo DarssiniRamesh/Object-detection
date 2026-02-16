@@ -5,6 +5,7 @@ A script to run multinode training with submitit.
 import argparse
 import os
 import uuid
+from pathlib import Path
 
 import main as detection
 import submitit
@@ -51,7 +52,6 @@ class Trainer(object):
     def checkpoint(self):
         import os
         import submitit
-        from pathlib import Path
 
         self.args.dist_url = get_init_file().as_uri()
         checkpoint_file = os.path.join(self.args.output_dir, "checkpoint.pth")
