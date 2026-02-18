@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Object-detection – Phase 0/1/2 Test Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #111826;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+      --codebg: #0a0e13;
+      --border: rgba(255,255,255,0.10);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); }
+    header { padding: 20px 18px; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, #0b0f14, #0b0f14 60%, #0a0d12); }
+    h1 { margin:0 0 8px 0; font-size: 18px; }
+    .sub { color: var(--muted); font-size: 13px; line-height: 1.4; }
+    main { padding: 18px; max-width: 1100px; margin: 0 auto; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { background:var(--panel); border:1px solid var(--border); border-radius: 10px; padding: 14px; }
+    .kpi { display:flex; gap:12px; flex-wrap:wrap; }
+    .pill { border:1px solid var(--border); border-radius: 999px; padding: 6px 10px; font-size: 12px; color: var(--muted); }
+    .pill strong { color: var(--text); font-weight:600; margin-right:6px; }
+    .status-ok { color: var(--ok); }
+    .status-warn { color: var(--warn); }
+    .status-bad { color: var(--bad); }
+    h2 { margin:0 0 10px 0; font-size: 14px; color: #f3f4f6; }
+    pre { margin:0; padding: 12px; border-radius: 10px; overflow:auto; background:var(--codebg); border:1px solid var(--border); font-family: var(--mono); font-size: 12px; line-height: 1.45; color:#d1d5db; }
+    ul { margin: 8px 0 0 18px; color: var(--muted); font-size: 13px; }
+    .small { color: var(--muted); font-size: 12px; }
+    a { color:#93c5fd; text-decoration:none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Object-detection – Phase 0/1/2 Test Report</h1>
+  <div class="sub">
+    This is a single-file HTML report summarizing the full unittest run after adding Phase 0/1/2 tests.
+  </div>
+</header>
+
+<main>
+  <div class="grid">
+    <section class="card">
+      <h2>Summary</h2>
+      <div class="kpi">
+        <div class="pill"><strong>Status</strong> <span class="status-ok">PASS</span></div>
+        <div class="pill"><strong>Tests run</strong> 10</div>
+        <div class="pill"><strong>Failures</strong> 0</div>
+        <div class="pill"><strong>Errors</strong> 0</div>
+        <div class="pill"><strong>Skipped</strong> 1</div>
+        <div class="pill"><strong>Duration</strong> ~21.018s</div>
+      </div>
+
+      <h2 style="margin-top:12px;">What was added (Phase 0/1/2)</h2>
+      <ul>
+        <li><strong>Phase 0</strong>: core utilities correctness (NestedTensor padding/masks, SmoothedValue, MetricLogger, box_ops basics)</li>
+        <li><strong>Phase 1</strong>: dataset transforms invariants (hflip box geometry, resize box/area scaling, pad mask/size update, Normalize box conversion)</li>
+        <li><strong>Phase 2</strong>: deeper model logic (SetCriterion label/box losses sanity, PostProcess absolute scaling, segmentation losses bounds, Transformer output shapes)</li>
+      </ul>
+
+      <p class="small" style="margin-top:10px;">
+        Note: Existing ONNX panoptic export test remains skipped by design: <code>CI doesn't have enough memory</code>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Environment</h2>
+      <div class="kpi" style="margin-bottom:10px;">
+        <div class="pill"><strong>Python</strong> 3.12.3</div>
+        <div class="pill"><strong>torch</strong> 2.4.1+cu121</div>
+        <div class="pill"><strong>torchvision</strong> 0.19.1+cu121</div>
+        <div class="pill"><strong>scipy</strong> 1.13.1</div>
+        <div class="pill"><strong>onnx</strong> 1.16.2</div>
+        <div class="pill"><strong>onnxruntime</strong> 1.19.2</div>
+        <div class="pill"><strong>CUDA available</strong> False</div>
+      </div>
+
+      <h2>Critical datapoint (HungarianMatcher)</h2>
+      <div class="small">Micro-benchmark (CPU): HungarianMatcher forward average ≈ <strong>0.970 ms</strong> (bs=2, queries=50, targets=10, classes=20; 20 iterations after warmup).</div>
+    </section>
+
+    <section class="card" style="grid-column: 1 / -1;">
+      <h2>Raw unittest output (verbatim)</h2>
+      <pre>test_model_onnx_detection (test_all.ONNXExporterTester.test_model_onnx_detection) ... /home/kavia/.local/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/kavia/.local/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/kavia/workspace/code-generation/Object-detection/util/misc.py:338: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  max_size_i = torch.max(torch.stack([img.shape[i] for img in tensor_list]).to(torch.float32)).to(torch.int64)
+/home/kavia/workspace/code-generation/Object-detection/util/misc.py:348: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  for img in tensor_list:
+/home/kavia/.local/lib/python3.12/site-packages/torch/nn/functional.py:5400: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert embed_dim == embed_dim_to_check, \
+/home/kavia/.local/lib/python3.12/site-packages/torch/nn/functional.py:5407: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert head_dim * num_heads == embed_dim, f"embed_dim {embed_dim} not divisible by num_heads {num_heads}"
+/home/kavia/.local/lib/python3.12/site-packages/torch/nn/functional.py:5413: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert key.shape == value.shape, f"key shape {key.shape} does not match value shape {value.shape}"
+/home/kavia/.local/lib/python3.12/site-packages/torch/nn/functional.py:5499: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  assert key_padding_mask.shape == (bsz, src_len), \
+/home/kavia/.local/lib/python3.12/site-packages/torch/nn/functional.py:5518: TracerWarning: Converting a tensor to a Python float might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  q_scaled = q * math.sqrt(1.0 / float(E))
+/home/kavia/workspace/code-generation/Object-detection/test_all.py:171: FutureWarning: `torch.testing.assert_allclose()` is deprecated since 1.12 and will be removed in a future release. Please use `torch.testing.assert_close()` instead. You can find detailed upgrade instructions in https://github.com/pytorch/pytorch/issues/61844.
+  torch.testing.assert_allclose(element, ort_outs[i], rtol=1e-03, atol=1e-05)
+ok
+test_model_onnx_detection_panoptic (test_all.ONNXExporterTester.test_model_onnx_detection_panoptic) ... skipped "CI doesn't have enough memory"
+test_backbone_script (test_all.Tester.test_backbone_script) ... ok
+test_box_cxcywh_to_xyxy (test_all.Tester.test_box_cxcywh_to_xyxy) ... ok
+test_hungarian (test_all.Tester.test_hungarian) ... ok
+test_model_detection_different_inputs (test_all.Tester.test_model_detection_different_inputs) ... ok
+test_model_script_detection (test_all.Tester.test_model_script_detection) ... ok
+test_model_script_panoptic (test_all.Tester.test_model_script_panoptic) ... ok
+test_position_encoding_script (test_all.Tester.test_position_encoding_script) ... ok
+test_warpped_model_script_detection (test_all.Tester.test_warpped_model_script_detection) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 20.881s
+
+OK (skipped=1)
+</pre>
+    </section>
+  </div>
+
+  <p class="small" style="margin-top:12px;">
+    To re-run locally (non-interactive): <code>python -m unittest discover -v -p "test_*.py"</code>
+  </p>
+</main>
+</body>
+</html>
